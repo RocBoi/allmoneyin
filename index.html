@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>G Code Publishing</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a1a, #121212);
+            color: #e0e0e0;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        h1, h2 {
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        h3 {
+            color: #f39c12;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .spotify-playlists iframe {
+            margin: 20px 0;
+            border: none;
+            width: 100%;
+            height: 80px;
+            border-radius: 10px;
+        }
+
+        .video-container iframe {
+            margin-top: 30px;
+            width: 100%;
+            height: 500px;
+            border-radius: 15px;
+        }
+
+        .form-container {
+            margin-top: 50px;
+        }
+
+        input[type="email"] {
+            padding: 10px;
+            width: 70%;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #f39c12;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #e67e22;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            input[type="email"] {
+                width: 90%;
+            }
+
+            .video-container iframe {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Main Heading -->
+        <h1>Welcome to G Code Publishing</h1>
+        <h2>Now Playing: RocBoi Quez - All In</h2>
+
+        <!-- YouTube Video Embed - Auto Playing -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/5tZX-LmG5Ac?autoplay=1&mute=1" 
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <!-- Spotify Playlists Section -->
+        <h2>Featured Albums by RocBoi Quez</h2>
+
+        <div class="spotify-playlists">
+            <iframe src="https://open.spotify.com/embed/album/1dPi6zkFGr4LXKnIGRRWsP" width="100%" height="80"></iframe>
+            <iframe src="https://open.spotify.com/embed/album/33jxYhB8vxihJG0JqzQ9i5" width="100%" height="80"></iframe>
+            <iframe src="https://open.spotify.com/embed/album/2E0JcHGNk2tWGVgg4XnQrY" width="100%" height="80"></iframe>
+            <iframe src="https://open.spotify.com/embed/album/7cCQmE0kZMNq8Bj2FebcBC" width="100%" height="80"></iframe>
+            <iframe src="https://open.spotify.com/embed/album/1ZrKPTSNvHLGlIAprapNMu" width="100%" height="80"></iframe>
+            <iframe src="https://open.spotify.com/embed/album/1VEcOKAGJHGfayVXjDskln" width="100%" height="80"></iframe>
+        </div>
+
+        <!-- Subscribe Form -->
+        <div class="form-container">
+            <h3>Subscribe to G Code News & Updates</h3>
+            <form action="https://formsubmit.co/gcode@atlquez.com" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="hidden" name="_subject" value="Subscribe for G Code News & Updates">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_autoresponse" value="Thank you for subscribing to G Code News & Updates! Stay tuned for the latest music and news.">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
