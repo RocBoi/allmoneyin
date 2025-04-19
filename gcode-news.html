@@ -107,9 +107,12 @@
     }
 
     .logo img {
-      width: 180px;
+      width: 300px;
       height: auto;
-      filter: contrast(110%) brightness(105%);
+      border: 3px solid #e53935;
+      box-shadow: 0 0 15px rgba(229, 57, 53, 0.7);
+      filter: grayscale(40%) contrast(110%) brightness(95%);
+      animation: flicker 4s infinite;
     }
 
     @keyframes flicker {
@@ -180,7 +183,15 @@
       <div class="logo">
         <img src="gcode-logo.png" alt="GCode Publishing Logo">
       </div>
-
+<div class="text-center" id="footer-text" style="color: #cccccc; font-size: 0.875rem; padding: 1rem 0;">
+  Performance &amp; Security by 
+  <a href="https://www.cloudflare.com?utm_source=atlquez&utm_campaign=footer" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     style="color: #00b7ff; font-weight: 600; text-decoration: underline;">
+     Cloudflare
+  </a>
+</div>
       <article>
         <h2>Projected Merch Drop: G Code Tees</h2>
         <p>G Code Tees are coming soon — limited-edition wear designed to rep the streets. Stay tuned for drop dates and pre-order access. <a href="#">Get on the list</a></p>
