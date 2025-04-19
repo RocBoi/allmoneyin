@@ -54,7 +54,8 @@
       margin: 0 auto;
     }
 
-    .mugshot {
+    .mugshot,
+    .logo {
       text-align: center;
       margin-top: 2em;
     }
@@ -66,6 +67,12 @@
       box-shadow: 0 0 15px rgba(229, 57, 53, 0.7);
       filter: grayscale(40%) contrast(110%) brightness(95%);
       animation: flicker 2s infinite;
+    }
+
+    .logo img {
+      width: 180px;
+      height: auto;
+      filter: contrast(110%) brightness(105%);
     }
 
     @keyframes flicker {
@@ -128,11 +135,12 @@
       <p>All fire. All fact. Stay in tune with the world of RocBoi Quez — exclusive drops, street footage, and real talk.</p>
     </section>
 
-    <section class="mugshot">
-      <img src="rocboi-mugshot.jpg" alt="RocBoi Quez Mugshot Style">
-    </section>
-
     <section class="news-list">
+
+      <div class="logo">
+        <img src="gcode-logo.png" alt="GCode Publishing Logo">
+      </div>
+
       <article>
         <h2>Projected Merch Drop: G Code Tees</h2>
         <p>G Code Tees are coming soon — limited-edition wear designed to rep the streets. Stay tuned for drop dates and pre-order access. <a href="#">Get on the list</a></p>
@@ -143,10 +151,15 @@
         <p>The team is currently crafting exclusive streetwear under the G Code brand — including hoodies, fitteds, and possibly collab heat with indie ATL designers. Designs will reflect RocBoi's grind and glow up. Stay locked in.</p>
       </article>
 
+      <div class="mugshot">
+        <img src="rocboi-mugshot.jpg" alt="RocBoi Quez Mugshot Style">
+      </div>
+
       <article>
         <h2>Warrants & Real Ones</h2>
         <p>Word hit the wire that RocBoi Quez had open warrants from prior cases that dated back years. Instead of duckin', he faced it head-on — showing up, cleaning house, and flipping the narrative. Ain’t no shame in the game, just chapters in a bigger book. The story stays raw, and the growth is real. From locked cells to unlocked potential, RocBoi’s journey keeps evolving with purpose.</p>
       </article>
+
     </section>
   </main>
 
