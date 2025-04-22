@@ -1,160 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RocBoi Quez | Official Website</title>
-    <meta name="description" content="Discover RocBoi Quez, an Atlanta hip-hop artist, and his latest music releases, news, and exclusive content on atlquez.com." />
-    <meta name="keywords" content="RocBoi Quez, Bentley Records, Atlanta hip-hop, hip-hop music, rap artist, G Code Publishing, music news, latest hip-hop, R.B.M.G" />
-    <meta name="author" content="G Code Publishing" />
-    <meta name="robots" content="index, follow" />
-    
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="RocBoi Quez | Hip-Hop & News" />
-    <meta property="og:description" content="Official RocBoi Quez website featuring exclusive music, videos, and news." />
-    <meta property="og:image" content="https://atlquez.com/images/rocboi_quez_promo.jpg" />
-    <meta property="og:url" content="https://atlquez.com" />
-    <meta property="og:type" content="website" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RocBoi Quez | Official Website</title>
+  <meta name="description" content="Official RocBoi Quez website featuring exclusive music, videos, and news.">
+  <meta name="keywords" content="RocBoi Quez, Bentley Records, Atlanta hip-hop, rap, G Code Publishing, hip-hop news, music">
+  <meta name="author" content="G Code Publishing">
+  <meta name="robots" content="index, follow">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="G Code Publishing - RocBoi Quez" />
-    <meta name="twitter:description" content="Hip-hop music and news from RocBoi Quez." />
-    <meta name="twitter:image" content="https://atlquez.com/assets/images/cover.jpg" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="RocBoi Quez | Hip-Hop & News">
+  <meta property="og:description" content="Discover RocBoi Quez and his latest single 'If I Lied' gaining industry traction.">
+  <meta property="og:image" content="https://atlquez.com/images/rocboi_quez_promo.jpg">
+  <meta property="og:url" content="https://atlquez.com">
+  <meta property="og:type" content="website">
 
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-NVFCWRSP');
-    </script>
-    <!-- End Google Tag Manager -->
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="G Code Publishing - RocBoi Quez">
+  <meta name="twitter:description" content="Hip-hop music and news from RocBoi Quez.">
+  <meta name="twitter:image" content="https://atlquez.com/assets/images/cover.jpg">
 
-    <!-- Custom Styles -->
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #4b0082, #800080);
-            color: #e0e0e0;
-            text-align: center;
-        }
+  <!-- Styles -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #4b0082, #8a2be2); /* purple gradient */
+      font-family: 'Arial', sans-serif;
+      color: #ffffff;
+      text-align: center;
+    }
 
-        h1, h2 {
-            color: #ffffff;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-        }
+    header {
+      padding: 50px 20px;
+    }
 
-        h3 {
-            color: #f39c12;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-        }
+    h1 {
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    }
 
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
+    p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
 
-        .spotify-playlists iframe {
-            margin: 20px 0;
-            width: 100%;
-            height: 80px;
-            border: none;
-            border-radius: 10px;
-        }
+    a.pre-save-link {
+      display: inline-block;
+      background-color: #1db954;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
 
-        .video-container iframe {
-            margin-top: 30px;
-            width: 100%;
-            height: 500px;
-            border-radius: 15px;
-        }
+    a.pre-save-link:hover {
+      background-color: #1aa34a;
+    }
 
-        .form-container {
-            margin-top: 50px;
-        }
+    .video-container, .spotify-playlists {
+      margin: 40px auto;
+      max-width: 800px;
+    }
 
-        input[type="email"] {
-            padding: 10px;
-            width: 70%;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-            margin-bottom: 15px;
-        }
+    iframe {
+      width: 100%;
+      border-radius: 12px;
+    }
 
-        button {
-            padding: 10px 20px;
-            background-color: #f39c12;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  </style>
 
-        button:hover {
-            background-color: #e67e22;
-        }
-
-        @media screen and (max-width: 768px) {
-            input[type="email"] {
-                width: 90%;
-            }
-        }
-
-        .xmen-release {
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 30px;
-        }
-
-        .xmen-image {
-            max-width: 50%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .pre-save-text {
-            font-size: 16px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        .pre-save-link {
-            display: inline-block;
-            background-color: #1db954;
-            color: white;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-top: 15px;
-        }
-
-        .pre-save-link:hover {
-            background-color: #1aa34a;
-        }
-    </style>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NVFCWRSP');
+  </script>
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVFCWRSP"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVFCWRSP"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <div class="container">
-        <h1>RocBoi Quez Teases Big Label Deal – Bentley Records</h1>
-        <p>RocBoi Quez is making waves in the industry, hinting at a major label deal that could redefine his career.  
-        With <a href="https://social.tunecore.com/linkShare?linkid=UG1a4a_vwLE36bAQHAK84A" target="_blank">his latest single "If I Lied"</a> gaining traction, fans eagerly await his next move as he inches closer to a game-changing signing.</p>
-    </div>
+  <header>
+    <h1>RocBoi Quez Teases Big Label Deal – Bentley Records</h1>
+    <p>RocBoi Quez is making waves in the industry, hinting at a major label deal that could redefine his career. With 
+      <a href="https://social.tunecore.com/linkShare?linkid=UG1a4a_vwLE36bAQHAK84A" class="pre-save-link" target="_blank">his latest single "If I Lied"</a> gaining traction, fans eagerly await his next move as he inches closer to a game-changing signing.</p>
+  </header>
+
+  <div class="video-container">
+    <!-- Example YouTube embed -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="RocBoi Quez Video" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="spotify-playlists">
+    <!-- Example Spotify embed -->
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5o8Y9H1gzE6yKl6zHbtCvI?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <footer>
+    &copy; 2025 RocBoi Quez | G Code Publishing. All rights reserved.
+  </footer>
 </body>
-
 </html>
