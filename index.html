@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>G Code Publishing | RocBoi Quez - X-MEN</title>
+  <title>ATLQUEZ x G Code Publishing</title>
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
     body {
@@ -14,26 +14,77 @@
       color: #f5f5f5;
       backdrop-filter: brightness(0.7) blur(1px);
     }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.85);
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 14px 20px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-decoration: none;
+      background: linear-gradient(to right, #6a00f4, #b700ff);
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ff00ff55;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff00ffaa;
+    }
+
     header {
       text-align: center;
       padding: 2rem;
       background-color: rgba(0, 0, 0, 0.65);
     }
-    h1 {
+
+    header h1 {
       font-size: 3rem;
       color: #ffd700;
       letter-spacing: 3px;
       text-transform: uppercase;
     }
-    p {
+
+    header p {
       font-size: 1.1rem;
-      opacity: 0.9;
       font-weight: 500;
     }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 1rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
     .video-container, .spotify-links, .pre-save, .subscribe {
       margin: 2rem auto;
       text-align: center;
     }
+
     iframe {
       width: 90%;
       max-width: 720px;
@@ -41,6 +92,7 @@
       border-radius: 10px;
       border: 3px solid #ffd700;
     }
+
     a.button {
       display: inline-block;
       margin: 0.5rem;
@@ -53,30 +105,12 @@
       border: 1px solid #ffd700;
       transition: background 0.3s ease;
     }
+
     a.button:hover {
       background: #ffd700;
       color: #000;
     }
-    .subscribe input[type="email"] {
-      padding: 0.5rem;
-      width: 260px;
-      border-radius: 5px;
-      border: none;
-      margin-right: 1rem;
-    }
-    .subscribe button {
-      padding: 0.6rem 1.2rem;
-      background: #ffd700;
-      color: #000;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .highlight {
-      color: #00e6e6;
-      font-weight: bold;
-    }
+
     .section-title {
       font-size: 1.8rem;
       margin-top: 3rem;
@@ -84,6 +118,12 @@
       font-weight: 700;
       text-shadow: 0 0 10px #000;
     }
+
+    .highlight {
+      color: #00e6e6;
+      font-weight: bold;
+    }
+
     .distribution-section {
       background-color: rgba(0, 0, 0, 0.75);
       padding: 2rem;
@@ -91,18 +131,26 @@
       border-top: 3px solid #ffd700;
       text-align: center;
     }
+
     .distribution-section strong {
       color: #ffd700;
     }
   </style>
 </head>
 <body>
+
   <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="nobody-knows.html">Stream Nobody Knows</a></li>
-  </ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="nobody-knows.html">Stream Nobody Knows</a></li>
+    </ul>
   </nav>
+
+  <div class="hero">
+    <h1>Welcome to ATLQUEZ</h1>
+    <p>Where Music and the Streets Speak as One</p>
+  </div>
+
   <header>
     <h1>G Code Publishing</h1>
     <p>Official Campaign for <strong>RocBoi Quez</strong> — X-MEN & Beyond</p>
@@ -136,14 +184,7 @@
   <div class="pre-save">
     <a class="button" href="https://vyd.co/X-men" target="_blank">Pre-Save: X-MEN</a>
     <a class="button" href="https://vyd.co/GetOutYourFeelingsChpdnscrwd-RocboiQuez" target="_blank">Pre-Save: Feelings (Chopped & Screwed)</a>
-    <a class="button" href="https://vyd.co/RocboiQuez_allin12" target="_blank">Pre-Save: All In</a>
   </div>
 
-  <div class="subscribe">
-    <form action="mailto:gcode@atlquez.com" method="POST" enctype="text/plain">
-      <input type="email" name="email" placeholder="Enter your email to subscribe" required />
-      <button type="submit">Subscribe</button>
-    </form>
-  </div>
 </body>
 </html>
