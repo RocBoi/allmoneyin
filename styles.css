@@ -20,6 +20,47 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+/* Enhanced Header with Image Overlay and Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(1.02);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+header {
+    background: url('https://raw.githubusercontent.com/RocBoi/gcode-publishing2/main/ResizedImage_2025-04-25_19-56-17_1.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+header .content {
+    position: relative;
+    z-index: 2;
+}
+
 h1 {
     font-size: 2.5rem;
     color: #fff;
