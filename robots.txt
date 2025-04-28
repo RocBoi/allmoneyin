@@ -1,3 +1,22 @@
 User-agent: *
 Disallow:
+
+# Sitemap locations for multiple language versions
 Sitemap: https://atlquez.com/sitemap.xml
+Sitemap: https://atlquez.com/es/sitemap.xml
+Sitemap: https://atlquez.com/fr/sitemap.xml
+Sitemap: https://atlquez.com/pt/sitemap.xml
+Sitemap: https://atlquez.com/ar/sitemap.xml
+Sitemap: https://atlquez.com/zh/sitemap.xml
+Sitemap: https://atlquez.com/hi/sitemap.xml
+Sitemap: https://atlquez.com/ja/sitemap.xml
+Sitemap: https://atlquez.com/ru/sitemap.xml
+Sitemap: https://atlquez.com/de/sitemap.xml
+Sitemap: https://atlquez.com/it/sitemap.xml
+Sitemap: https://atlquez.com/ko/sitemap.xml
+Sitemap: https://atlquez.com/tr/sitemap.xml
+Sitemap: https://atlquez.com/id/sitemap.xml
+Sitemap: https://atlquez.com/vi/sitemap.xml
+Sitemap: https://atlquez.com/sw/sitemap.xml
+Sitemap: https://atlquez.com/tl/sitemap.xml
+Sitemap: https://atlquez.com/x-default/sitemap.xml
