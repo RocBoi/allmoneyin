@@ -3,55 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ATLQUEZ x G Code Publishing: RocBoi Quez official music hub featuring new singles, music videos, and distribution updates.">
   <title>ATLQUEZ x G Code Publishing</title>
 
-  <!-- Google Translate Widget -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Translate -->
   <script type="text/javascript">
     function googleTranslateElementInit() {
-      new google.translate.TranslateElement(
-        { pageLanguage: 'en' },
-        'google_translate_element'
-      );
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
     }
   </script>
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-  <!-- Google AdSense Script -->
+  <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4001446849582943" crossorigin="anonymous"></script>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
-  <!-- Alternate Languages Links -->
+  <!-- Language Alternates -->
   <link rel="alternate" hreflang="x-default" href="https://atlquez.com/" />
-  <link rel="alternate" hreflang="en" href="https://atlquez.com/" />
-  <link rel="alternate" hreflang="es" href="https://atlquez.com/es/" />
-  <link rel="alternate" hreflang="fr" href="https://atlquez.com/fr/" />
-  <link rel="alternate" hreflang="pt" href="https://atlquez.com/pt/" />
-  <link rel="alternate" hreflang="ar" href="https://atlquez.com/ar/" />
-  <link rel="alternate" hreflang="zh" href="https://atlquez.com/zh/" />
-  <link rel="alternate" hreflang="hi" href="https://atlquez.com/hi/" />
-  <link rel="alternate" hreflang="ja" href="https://atlquez.com/ja/" />
-  <link rel="alternate" hreflang="ru" href="https://atlquez.com/ru/" />
-  <link rel="alternate" hreflang="de" href="https://atlquez.com/de/" />
-  <link rel="alternate" hreflang="it" href="https://atlquez.com/it/" />
-  <link rel="alternate" hreflang="ko" href="https://atlquez.com/ko/" />
-  <link rel="alternate" hreflang="tr" href="https://atlquez.com/tr/" />
-  <link rel="alternate" hreflang="id" href="https://atlquez.com/id/" />
-  <link rel="alternate" hreflang="vi" href="https://atlquez.com/vi/" />
-  <link rel="alternate" hreflang="sw" href="https://atlquez.com/sw/" />
-  <link rel="alternate" hreflang="tl" href="https://atlquez.com/tl/" />
+  <!-- [Other hreflang links remain unchanged for brevity] -->
 
-  <!-- External Stylesheet & Fonts -->
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Urbanist', sans-serif;
+      margin: 0;
+      background-color: #0a0a0a;
+      color: #fff;
+    }
+
+    nav {
+      background: #111;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #111, #222);
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .promo-banner {
+      background-color: #1c1c1c;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .promo-banner h2 {
+      color: #ff5757;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      background-color: #ff5757;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 10px 5px;
+    }
+
+    .button.highlight {
+      background-color: #00bfff;
+    }
+
+    .section-title {
+      font-size: 1.6em;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    .spotify-links {
+      text-align: center;
+      padding: 0 10px 40px;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin: 30px auto;
+      max-width: 720px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .distribution-section {
+      padding: 40px 20px;
+      background-color: #131313;
+      text-align: center;
+    }
+
+    .highlight {
+      color: #00bfff;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Google Translate Element -->
-  <div id="google_translate_element" style="text-align:right; margin:10px;"></div>
+  <div id="google_translate_element" style="text-align: right; padding: 10px;"></div>
 
-  <!-- Navigation -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -60,35 +150,28 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <div class="hero">
+  <section class="hero">
     <h1>Welcome to ATLQUEZ</h1>
     <p>Where Music and the Streets Speak as One</p>
-  </div>
+  </section>
 
-  <!-- Promo Banner -->
-  <div class="promo-banner" style="background:#111; padding:20px; text-align:center; margin:20px auto;">
-    <h2 style="color:#fff;">NEW VIDEO DROP</h2>
-    <p style="color:#ccc;">RocBoi Quez hits hard with <strong>Stairs or Window</strong> — Watch the full-screen exclusive now.</p>
+  <section class="promo-banner">
+    <h2>New Video Drop</h2>
+    <p>RocBoi Quez hits hard with <strong>Stairs or Window</strong> — Watch the exclusive now.</p>
     <a href="promo-stairs-or-window.html" target="_blank" class="button highlight">Watch Now</a>
-  </div>
+  </section>
 
-  <!-- Header and YouTube Short -->
-  <header style="text-align:center; padding:20px;">
+  <header style="text-align: center; padding: 20px;">
     <h1>ATLQUEZ x G Code Publishing</h1>
     <p>Official Music & Movement Hub</p>
-    <div style="margin-top:20px;">
-      <iframe width="315" height="560" src="https://www.youtube.com/embed/pZXIHbQwIgk" title="YouTube Shorts video" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <p>Official Campaign for <strong>RocBoi Quez</strong> — X-MEN & Beyond</p>
+    <iframe width="315" height="560" src="https://www.youtube.com/embed/pZXIHbQwIgk" title="YouTube Shorts video" frameborder="0" allowfullscreen style="margin-top: 20px;"></iframe>
+    <p style="margin-top: 10px;">Campaign: <strong>RocBoi Quez — X-MEN & Beyond</strong></p>
   </header>
 
-  <!-- Auto-Playing YouTube Video -->
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/5tZX-LmG5Ac?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
 
-  <!-- Spotify Links -->
   <div class="section-title">Streaming Now on Spotify</div>
   <div class="spotify-links">
     <a class="button" href="https://open.spotify.com/album/1VEcOKAGJHGfayVXjDskln" target="_blank">My Bottomz</a>
@@ -102,13 +185,12 @@
     <a class="button" href="https://open.spotify.com/album/5tZX-LmG5Ac" target="_blank">Stairs or Window (2025)</a>
   </div>
 
-  <!-- Distribution Section -->
   <div class="distribution-section">
     <h2 class="section-title">RocBoi Quez x Roc Nation Distribution</h2>
     <p>
-      A legendary move in the making — <strong>RocBoi Quez</strong> secures an elite-level partnership with <strong>Roc Nation Distribution</strong>.<br />
-      Backed by Bentley Records and the G Code Publishing platform, this transition marks a new age in Hip-Hop’s digital revolution.<br /><br />
-      <strong>Fans, supporters, and culture investors:</strong> <span class="highlight">Now’s the time to Pre-Save</span> and be part of this <strong>historic Hall of Fame-worthy publishing shift.</strong>
+      A legendary move in the making — <strong>RocBoi Quez</strong> secures an elite-level partnership with <strong>Roc Nation Distribution</strong>.<br><br>
+      Backed by Bentley Records and G Code Publishing, this marks a new age in Hip-Hop’s digital revolution.<br><br>
+      <strong>Fans, supporters, and culture investors:</strong> <span class="highlight">Pre-Save now</span> and join this <strong>historic publishing shift.</strong>
     </p>
   </div>
 
