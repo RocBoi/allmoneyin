@@ -173,3 +173,51 @@ nav a:hover {
     margin: 0.5rem auto;
   }
 }
+#summer-of-the-real {
+  background: linear-gradient(to right, #000000, #1a1a1a);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 3px solid #ff4500;
+}
+
+#summer-of-the-real h1 {
+  font-size: 2.5rem;
+  font-family: 'Impact', sans-serif;
+  letter-spacing: 1px;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+#summer-of-the-real p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+#summer-of-the-real img {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 16px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.6);
+}
+
+#summer-of-the-real a.btn-listen-now {
+  display: inline-block;
+  background: #ff4500;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+#summer-of-the-real a.btn-listen-now:hover {
+  background-color: #e03e00;
+  transform: scale(1.05);
+}
