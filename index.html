@@ -1,159 +1,195 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Official EPK for 'Summer of the Real' by RocBoi Quez & Oreez featuring Wiz Khalifa, EaziDuzit, and Lady NY. Released by Bentley Records IO.">
   <meta name="keywords" content="RocBoi Quez, Summer of the Real, Wiz Khalifa, Bentley Records, Atlanta Hip-Hop, Oreez, Lady NY, EaziDuzit, Hip-Hop Promo">
   <meta name="author" content="ATLQUEZ.com">
   <title>Summer of the Real - RocBoi Quez & Oreez ft. Wiz Khalifa</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+    /* === ANIMATED BACKGROUND === */
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(#000000, #1a1a1a);
       color: #fff;
       line-height: 1.6;
+      background: linear-gradient(-45deg, #000000, #1a1a1a, #FFD700, #111111);
+      background-size: 400% 400%;
+      animation: gradientMotion 10s ease infinite;
     }
+
+    @keyframes gradientMotion {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
     .container {
       max-width: 1200px;
       margin: auto;
       padding: 20px;
     }
+
     header, footer {
       text-align: center;
       padding: 20px 0;
     }
+
     header img {
       max-width: 100%;
       border-radius: 12px;
     }
+
     h1, h2, h3 {
-      color: #ff4c00;
+      color: #FFD700;
     }
+
     a {
-      color: #00ffff;
+      color: #FFD700;
+      text-decoration: none;
     }
+
     .buttons a {
-      background: #ff4c00;
-      color: #fff;
+      background: #000;
+      color: #FFD700;
       padding: 10px 20px;
       margin: 10px;
       display: inline-block;
       text-decoration: none;
       border-radius: 8px;
+      border: 2px solid #FFD700;
       transition: 0.3s;
+      font-weight: bold;
     }
+
     .buttons a:hover {
-      background: #fff;
+      background: #FFD700;
       color: #000;
     }
+
     .play-overlay {
       position: relative;
       width: 100%;
-      max-width: 100%;
       height: 0;
       padding-bottom: 56.25%;
       margin-top: 20px;
       background: url('/assets/images/Screenshot_20250620-160150.png') center/cover no-repeat;
       border-radius: 10px;
     }
+
     .play-overlay a {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 64px;
-      color: white;
-      background: rgba(0,0,0,0.5);
+      color: #FFD700;
+      background: rgba(0, 0, 0, 0.6);
       padding: 20px 30px;
       border-radius: 50%;
       text-decoration: none;
-      transition: background 0.3s;
+      transition: background 0.3s, color 0.3s;
     }
+
     .play-overlay a:hover {
-      background: rgba(255,76,0,0.8);
+      background: rgba(255, 215, 0, 0.8);
+      color: #000;
     }
+
     .form-section {
       background: #111;
       padding: 20px;
       border-radius: 10px;
       margin-top: 30px;
     }
+
     input, textarea {
       width: 100%;
       padding: 10px;
       margin: 10px 0;
-      border: none;
+      border: 2px solid #FFD700;
       border-radius: 8px;
+      background: #000;
+      color: #fff;
     }
+
     button {
-      background: #00ffff;
+      background: #FFD700;
       color: #000;
       padding: 10px 20px;
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      font-weight: bold;
     }
+
     .social-icons a {
       margin: 0 10px;
       font-size: 24px;
-      color: #fff;
+      color: #FFD700;
       transition: 0.3s;
     }
+
     .social-icons a:hover {
-      color: #ff4c00;
+      color: #fff;
     }
   </style>
 </head>
 <body>
   <header>
     <div class="container">
-      <img src="/assets/images/Screenshot_20250620-160150.png" alt="Summer of the Real Cover">
+      <img src="/assets/images/Screenshot_20250620-160150.png" alt="Summer of the Real Cover" />
       <h1>Summer of the Real</h1>
       <h2>RocBoi Quez & Oreez ft. Wiz Khalifa, EaziDuzit & Lady NY</h2>
       <p>Released by Bentley Records IO · June 20, 2025</p>
     </div>
-  </header>  <div class="container">
+  </header>
+
+  <div class="container">
     <section class="buttons">
       <a href="https://bentleyrecords.lnk.to/WizKhalifa-SummerOfTheReal?fbclid=PAQ0xDSwLFLMlleHRuA2FlbQIxMQABp2FlQoOpGEJPgbSHMm92q8pG0APtiNTwDrdDiLnAGPCtlN55Y8MGJMiMzaGN_aem_9XKUSKqAyP7XqCR-RmL6sg" target="_blank"><i class="fas fa-music"></i> Stream Now</a>
       <a href="mailto:gcode@atlquez.com"><i class="fas fa-envelope"></i> Press / Booking</a>
-    </section><section>
-  <h2>About the Track</h2>
-  <p>"Summer of the Real" is a powerful summer anthem fusing authentic Atlanta street stories with a mainstream-ready sound. Featuring RocBoi Quez, Oreez, the iconic Wiz Khalifa, and breakout artists EaziDuzit and Lady NY — the song demands realness, celebration, and fire bars. A declaration of identity and resilience from the new voices in hip-hop.</p>
-</section>
+    </section>
 
-<section>
-  <h2>Listen Now</h2>
-  <div class="play-overlay">
-    <a href="https://bentleyrecords.lnk.to/WizKhalifa-SummerOfTheReal?fbclid=PAQ0xDSwLFLMlleHRuA2FlbQIxMQABp2FlQoOpGEJPgbSHMm92q8pG0APtiNTwDrdDiLnAGPCtlN55Y8MGJMiMzaGN_aem_9XKUSKqAyP7XqCR-RmL6sg" target="_blank">
-      <i class="fas fa-play"></i>
-    </a>
+    <section>
+      <h2>About the Track</h2>
+      <p>"Summer of the Real" is a powerful summer anthem fusing authentic Atlanta street stories with a mainstream-ready sound. Featuring RocBoi Quez, Oreez, the iconic Wiz Khalifa, and breakout artists EaziDuzit and Lady NY — the song demands realness, celebration, and fire bars. A declaration of identity and resilience from the new voices in hip-hop.</p>
+    </section>
+
+    <section>
+      <h2>Listen Now</h2>
+      <div class="play-overlay">
+        <a href="https://bentleyrecords.lnk.to/WizKhalifa-SummerOfTheReal" target="_blank">
+          <i class="fas fa-play"></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h2>Subscribe for Updates</h2>
+      <form action="mailto:gcode@atlquez.com" method="POST" enctype="text/plain">
+        <input type="email" name="email" placeholder="Enter your email..." required>
+        <textarea name="message" placeholder="Message (optional)"></textarea>
+        <button type="submit">Join Mailing List</button>
+      </form>
+      <p style="margin-top: 10px; font-size: 0.9em; color: #bbb;">Your message will be sent directly to gcode@atlquez.com</p>
+    </section>
+
+    <section>
+      <h2>Follow RocBoi Quez</h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/rocboiquez_" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/rocboiquez_" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com/@rocboiquezofficial?si=Jp6B3iD0xSv-4nPB" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://open.spotify.com" target="_blank"><i class="fab fa-spotify"></i></a>
+      </div>
+    </section>
   </div>
-</section>
 
-<section class="form-section">
-  <h2>Subscribe for Updates</h2>
-  <form action="mailto:gcode@atlquez.com" method="POST" enctype="text/plain">
-    <input type="email" name="email" placeholder="Enter your email..." required>
-    <textarea name="message" placeholder="Message (optional)"></textarea>
-    <button type="submit">Join Mailing List</button>
-  </form>
-  <p style="margin-top: 10px; font-size: 0.9em; color: #bbb;">Your message will be sent directly to gcode@atlquez.com</p>
-</section>
-
-<section>
-  <h2>Follow RocBoi Quez</h2>
-  <div class="social-icons">
-    <a href="https://www.instagram.com/rocboiquez_" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-    <a href="https://open.spotify.com" target="_blank"><i class="fab fa-spotify"></i></a>
-  </div>
-</section>
-
-  </div>  <footer>
+  <footer>
     <p>&copy; 2025 RocBoi Quez / G Code Publishing · Website: <a href="http://www.atlquez.com">www.atlquez.com</a></p>
   </footer>
 </body>
