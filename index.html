@@ -67,7 +67,6 @@
     .promo-banner,
     .distribution-section,
     .spotify-section,
-    .shorts-section,
     .video-section {
       padding: 40px 20px;
       text-align: center;
@@ -79,7 +78,6 @@
     .promo-banner h2,
     .spotify-section h2,
     .distribution-section h2,
-    .shorts-section h2,
     .video-section h2 {
       color: #facc15;
       font-size: 2em;
@@ -117,6 +115,54 @@
       border: none;
     }
 
+    #summer-of-the-real.feature-section {
+      background: linear-gradient(to right, #0a0a0a, #1c1c1c);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 3px solid #ff4500;
+    }
+
+    #summer-of-the-real h1 {
+      font-size: 2.6rem;
+      font-family: 'Impact', sans-serif;
+      color: #ffcc00;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    #summer-of-the-real p {
+      font-size: 1.2rem;
+      max-width: 720px;
+      margin: 0 auto 30px auto;
+      line-height: 1.6;
+    }
+
+    #summer-of-the-real .cover-art {
+      max-width: 350px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(255, 140, 0, 0.7);
+      margin-bottom: 30px;
+    }
+
+    #summer-of-the-real .btn-listen-now {
+      background: #ff4500;
+      color: #fff;
+      font-size: 1.1rem;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    #summer-of-the-real .btn-listen-now:hover {
+      background-color: #e03e00;
+      transform: scale(1.05);
+    }
+
     @media (max-width: 600px) {
       .hero h1 {
         font-size: 2em;
@@ -139,7 +185,6 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="nobody-knows.html">Stream Nobody Knows</a></li>
-      <li><a href="promo-stairs-or-window.html" target="_blank">Watch "Stairs or Window"</a></li>
     </ul>
   </nav>
 
@@ -147,38 +192,22 @@
   <section class="hero">
     <h1>Welcome to ATLQUEZ</h1>
     <p>Where Music and the Streets Speak as One</p>
+
+    <!-- Summer of the Real Feature -->
     <section id="summer-of-the-real" class="feature-section">
-  <h1>🔥 RocBoi Quez x Wiz Khalifa – “Summer of the Real” OUT NOW!</h1>
-
-  <p>
-    RocBoi Quez officially enters the mainstream with this fiery summer anthem, 
-    joined by Wiz Khalifa, Oreez, EaziDuzit & Lady NY — powered by Bentley Records.
-  </p>
-
-  <img src="gcode-publishing2/assets/images/summer-of-the-real-cover.png" 
-       alt="Summer of the Real Cover Art" class="cover-art">
-
-  <br>
-
-  <a href="https://bentleyrecords.lnk.to/WizKhalifa-SummerOfTheReal" 
-     target="_blank" class="btn-listen-now">
-     🎧 TAP TO LISTEN
-  </a>
+      <h1>🔥 RocBoi Quez x Wiz Khalifa – “Summer of the Real” OUT NOW!</h1>
+      <p>
+        RocBoi Quez officially enters the mainstream with this fiery summer anthem, 
+        joined by Wiz Khalifa, Oreez, EaziDuzit & Lady NY — powered by Bentley Records.
+      </p>
+      <img src="gcode-publishing2/assets/images/summer-of-the-real-cover.png" 
+           alt="Summer of the Real Cover Art" class="cover-art">
+      <br>
+      <a href="https://bentleyrecords.lnk.to/WizKhalifa-SummerOfTheReal" 
+         target="_blank" class="btn-listen-now">
+         🎧 TAP TO LISTEN
+      </a>
     </section>
-  </section>
-
-  <!-- Promo Banner -->
-  <section class="promo-banner">
-    <h2>NEW VIDEO DROP</h2>
-    <p>RocBoi Quez hits hard with <strong>Stairs or Window</strong></p>
-    <a href="promo-stairs-or-window.html" target="_blank" class="button">Watch Now</a>
-  </section>
-
-  <!-- YouTube Short Embed -->
-  <section class="shorts-section">
-    <h2>Featured Short</h2>
-    <iframe width="315" height="560" src="https://www.youtube.com/embed/pZXIHbQwIgk" title="YouTube Short" allowfullscreen></iframe>
-    <p>Official Campaign for <strong>RocBoi Quez</strong> — X-MEN & Beyond</p>
   </section>
 
   <!-- Autoplay YouTube -->
