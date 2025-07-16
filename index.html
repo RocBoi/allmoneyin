@@ -298,25 +298,40 @@
   </p>
   <a href="mailto:gcode@atlquez.com" class="button">Contact G Code Publishing</a>
 </section>
-  <!-- RocBoi Quez Merch Pop-Up -->
-<div id="merchPopup" style="display:none; position:fixed; bottom:20px; right:20px; background-color:white; padding:15px; border-radius:12px; box-shadow:0 0 20px rgba(0,0,0,0.5); z-index:9999; max-width:300px;">
-  <button onclick="document.getElementById('merchPopup').style.display='none'" style="position:absolute; top:5px; right:10px; background:none; border:none; font-weight:bold; font-size:18px; cursor:pointer;">×</button>
-  <a href="https://www.redbubble.com/shop/ap/172231642?asc=u" target="_blank" rel="noopener">
-    <img src="https://ih1.redbubble.net/image.5536851125.1642/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="RocBoi Quez Phone Case" style="width:100%; border-radius:10px;">
-    <p style="margin-top:10px; font-weight:bold; color:#000;">🔥 Limited Edition RocBoi Quez Merch<br><span style="font-size:14px; color:#555;">📍 Shot at Domino’s Pizza, Riverdale, GA</span></p>
-    <button style="margin-top:10px; background-color:#e60023; color:white; border:none; padding:10px 20px; border-radius:8px; cursor:pointer;">Shop Now</button>
-  </a>
-</div>
-
-<script>
-  // Show the popup 3 seconds after page load
-  window.onload = () => {
-    setTimeout(() => {
-      document.getElementById('merchPopup').style.display = 'block';
-    }, 3000);
-  };
+  <!-- Popup Styles -->
+<style>
+  #popup-ad {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #000;
+    border: 3px solid #ff4d00;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 77, 0, 0.7);
+    animation: fadeInUp 1s ease;
+  }
+  #popup-ad img {
+    max-width: 150px;
+    border-radius: 10px;
+  }
+  #popup-ad a {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 8px;
+    text-decoration: none;
+    background: #ff4d00;
+    padding: 6px 12px;
+    border-radius: 8px;
+  }
+  @keyframes fadeInUp {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+</style>
 </script>
-
-
 </body>
 </html>
