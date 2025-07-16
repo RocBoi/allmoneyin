@@ -221,3 +221,46 @@ nav a:hover {
   background-color: #e03e00;
   transform: scale(1.05);
 }
+/* Enhanced Distribution Section for DJ VIP */
+#djvip-publishing {
+  background: linear-gradient(to right, #111, #1a1a1a);
+  color: #ffcc00;
+  padding: 50px 25px;
+  text-align: center;
+  border-top: 3px solid #ff4500;
+  border-bottom: 3px solid #ff4500;
+}
+
+#djvip-publishing h2 {
+  font-size: 2.2rem;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 900;
+  color: #facc15;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#djvip-publishing p {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  color: #f3f3f3;
+}
+
+#djvip-publishing a.button {
+  background-color: #ff4500;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#djvip-publishing a.button:hover {
+  background-color: #e03e00;
+  transform: scale(1.05);
+}
