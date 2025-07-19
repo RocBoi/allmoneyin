@@ -1,3 +1,4 @@
+import 'dotenv/config';
 const { NFTStorage, File } = require("nft.storage");
 const fs = require("fs");
 const path = require("path");
