@@ -1,45 +1,117 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RocBoi Quez | Hip-Hop's New Legend</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="RocBoi Quez Official Site - Summer of the Real featuring Wiz Khalifa out now on BentleyRecords.io.">
+  <meta name="keywords" content="RocBoi Quez, Wiz Khalifa, Hip-Hop, Summer of the Real, Bentley Records, DJ VIP, Taylor Gang">
+  <meta name="author" content="RocBoi Quez">
+  <title>RocBoi Quez | Hip-Hop’s New Legend</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0e0e20;
+      color: #ffffff;
+    }
+    header {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      padding: 2rem;
+      text-align: center;
+      color: silver;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #111;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #1e90ff;
+    }
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+    img {
+      max-width: 90%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    .article {
+      background-color: #1c1c2b;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+      text-align: left;
+    }
+    .stream-now {
+      display: inline-block;
+      background-color: #1e90ff;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+    .popup-ad {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      width: 300px;
+      border: 3px solid #fff;
+      background: #fff;
+      z-index: 999;
+    }
+    .popup-ad img {
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-  <header style="background: linear-gradient(to right, #0f52ba, #c0c0c0); color: white; text-align: center; padding: 2rem 1rem;">
-    <h1 style="font-size: 3rem; font-weight: bold;">ROCBOI QUEZ</h1>
-    <p style="font-size: 1.5rem; letter-spacing: 2px;">HIP-HOP'S NEW LEGEND</p>
-  </header>  <section style="text-align: center; margin: 2rem auto;">
-    <img src="assets/images/Screenshot_20250620-160150.png" alt="Summer of the Real Cover Art" style="max-width: 100%; height: auto;">
-    <br><br>
-    <a href="https://bentleyrecords.lnk.to/WizKhalifa-SummerOfTheReal?fbclid=PAZXh0bgNhZW0CMTEAAaeOuxOqcCSRRLGuJAvnWuBDOyf6CgAIKaQUAhY1kgv6u0D0M5U-bl2eQAi0Hg_aem_Lcq2qspl2CRYYQiP8LYDHA" target="_blank" style="font-size: 1.2rem; color: #0f52ba; font-weight: bold; text-decoration: underline;">🎵 PreSave “Summer of the Real” by Wiz Khalifa</a>
-  </section>  <section style="padding: 2rem;">
-    <h2>RocBoi Quez x DJ VIP Partnership</h2>
-    <p>RocBoi Quez is taking his journey to new heights with an exclusive publishing deal through VIP Access Publishing. The partnership leads into a vast array of outlets managed by infamous Dj Vip. This decision was made and agreed mutually by both parties, visually adhereing to the talents of a duo anticipated in Atlanta and amongst hiphop fans worldwide. After this Summers release featuring Wiz Khalifa, "Summer of The Real", distributed under BentleyRecords.io artist development platform, RocBoi Quez has strategically made a power move worth notation. Get ready for a new wave of music, merch, and motion.</p>
-  </section>  <nav style="text-align: center; margin: 2rem auto;">
-    <a href="music.html" style="margin: 0 1rem; font-weight: bold; color: #0f52ba;">Music</a>
-    <a href="videos.html" style="margin: 0 1rem; font-weight: bold; color: #0f52ba;">Videos</a>
-    <a href="merch.html" style="margin: 0 1rem; font-weight: bold; color: #0f52ba;">Merch</a>
-    <a href="newsletter.html" style="margin: 0 1rem; font-weight: bold; color: #0f52ba;">Newsletter</a>
-  </nav>  <!-- Redbubble Pop-up -->  <script>
-    window.onload = function() {
-      setTimeout(function() {
-        let popup = document.createElement('div');
-        popup.style.position = 'fixed';
-        popup.style.bottom = '20px';
-        popup.style.right = '20px';
-        popup.style.background = '#ffffff';
-        popup.style.border = '2px solid #0f52ba';
-        popup.style.padding = '10px';
-        popup.style.zIndex = '9999';
-        popup.innerHTML = `
-          <a href="https://www.redbubble.com/shop/ap/172231642?asc=u" target="_blank">
-            <img src="assets/images/dominos-popup.jpg" alt="Fan Merch" style="max-width: 200px; height: auto;">
-            <p style="margin: 0; color: #0f52ba; font-weight: bold;">Shop RocBoi Quez Fan Merch</p>
-          </a>
-        `;
-        document.body.appendChild(popup);
-      }, 3000);
-    }
-  </script></body>
+
+  <header>
+    ROCBOI QUEZ<br>HIP-HOP’S NEW LEGEND
+  </header>
+
+  <nav>
+    <a href="music.html">Music</a>
+    <a href="videos.html">Videos</a>
+    <a href="merch.html">Merch</a>
+    <a href="newsletter.html">Newsletter</a>
+  </nav>
+
+  <section>
+    <h2>Summer of the Real ft. Wiz Khalifa</h2>
+    <img src="assets/images/Screenshot_20250620-160150.png" alt="Summer of the Real Cover" />
+    <br>
+    <a class="stream-now" href="https://bentleyrecords.lnk.to/WizKhalifa-SummerOfTheReal?fbclid=PAZXh0bgNhZW0CMTEAAaeOuxOqcCSRRLGuJAvnWuBDOyf6CgAIKaQUAhY1kgv6u0D0M5U-bl2eQAi0Hg_aem_Lcq2qspl2CRYYQiP8LYDHA" target="_blank">Stream Now</a>
+  </section>
+
+  <section class="article">
+    <h2>RocBoi Quez x DJ VIP - Exclusive Announcement</h2>
+    <p>RocBoi Quez has officially joined forces with DJ VIP to launch a new era of independent distribution and artist visibility. In collaboration with Bentley Records and powered by the new artist development platform, RocBoi's latest project pushes creative boundaries and secures him a seat at the table with legends. Taylor Gang’s very own Wiz Khalifa joins the lineup with a co-signed feature in “Summer of the Real.”</p>
+    <p>Stay tuned for more singles, streaming exclusives, fan merch drops, and major press coverage on RocBoi’s rise from Atlanta to the global stage.</p>
+  </section>
+
+  <div class="popup-ad">
+    <a href="https://www.redbubble.com/shop/ap/172231642?asc=u" target="_blank">
+      <img src="https://www.redbubble.com/shop/ap/172231642?asc=u" alt="Fan Merch Ad">
+    </a>
+  </div>
+
+</body>
 </html>
