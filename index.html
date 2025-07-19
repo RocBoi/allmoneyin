@@ -118,6 +118,131 @@
       <img src="https://www.redbubble.com/shop/ap/172231642?asc=u" alt="Fan Merch Ad">
     </a>
   </div>
+  <style>
+  /* Pop-up background overlay */
+  #promo-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    z-index: 9998;
+  }
+
+  /* Pop-up container */
+  #promo-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+    background: #121212;
+    color: #fff;
+    padding: 20px 25px 30px;
+    border-radius: 12px;
+    width: 320px;
+    max-width: 90vw;
+    box-shadow: 0 0 20px rgba(0,255,153,0.8);
+    font-family: Arial, sans-serif;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+
+  /* Show popup */
+  #promo-popup.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  #promo-popup img {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  #promo-popup h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #00ff99;
+    text-align: center;
+  }
+
+  #promo-popup p {
+    margin: 0 0 18px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #promo-popup p span.discount {
+    color: #ff4444;
+    font-weight: bold;
+  }
+
+  #promo-popup a {
+    display: block;
+    background-color: #00ff99;
+    color: #121212;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0,255,153,0.4);
+    transition: background-color 0.3s ease;
+  }
+
+  #promo-popup a:hover {
+    background-color: #00cc7a;
+  }
+
+  #promo-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+  }
+</style>
+
+<!-- Overlay -->
+<div id="promo-overlay"></div>
+
+<!-- Pop-up -->
+<div id="promo-popup" role="dialog" aria-modal="true" aria-labelledby="promo-title" aria-describedby="promo-desc">
+  <span id="promo-close-btn" aria-label="Close popup">&times;</span>
+  <img src="https://ih1.redbubble.net/image.172285674.18NOY,small,ipad_portrait,750x1000.jpg" alt="High Stoner Tough iPhone Case" />
+  <h2 id="promo-title">New Release!</h2>
+  <p id="promo-desc">Get your <strong>"High Stoner"</strong> Tough iPhone Case<br>— Durable & Stylish.<br><span class="discount">25% OFF for a limited time!</span></p>
+  <a href="https://www.redbubble.com/i/iphone-case/COMING-SOON-FALL-25-by-GCodeMerch/172285674.18NOY" target="_blank" rel="noopener">Shop Now</a>
+</div>
+
+<script>
+  // Show popup and overlay with animation
+  window.onload = function() {
+    setTimeout(function() {
+      document.getElementById('promo-overlay').style.display = 'block';
+      document.getElementById('promo-popup').classList.add('show');
+    }, 2000); // 2 seconds delay
+  };
+
+  // Close popup
+  document.getElementById('promo-close-btn').onclick = closePopup;
+  document.getElementById('promo-overlay').onclick = closePopup;
+
+  function closePopup() {
+    const popup = document.getElementById('promo-popup');
+    const overlay = document.getElementById('promo-overlay');
+    popup.classList.remove('show');
+    overlay.style.display = 'none';
+  }
+</script>
 
 </body>
 </html>
