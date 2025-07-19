@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book RocBoi Quez</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      padding: 2rem;
+    }
+    h1 {
+      color: #ffcc00;
+    }
+    form {
+      max-width: 600px;
+      margin-top: 1.5rem;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border-radius: 6px;
+      border: none;
+      margin-top: 0.5rem;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 1rem 2rem;
+      background: #ffcc00;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    #deposit {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: #00ff99;
+    }
+    .cashapp-link {
+      margin-top: 1rem;
+      background: #000;
+      color: #00ffcc;
+      padding: 1rem;
+      border-radius: 6px;
+      text-align: center;
+    }
+    .cashapp-link a {
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Book RocBoi Quez</h1>
+  <p>Select your booking type and pay 50% deposit via Cash App ($gcoderadiofm).</p>
+  
+  <form id="bookingForm">
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="phone">Phone Number *</label>
+    <input type="tel" id="phone" name="phone" required />
+
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="type">Booking Type *</label>
+    <select id="type" name="type" required>
+      <option value="">-- Select --</option>
+      <option value="feature">Feature – $1000</option>
+      <option value="performance">Venue Performance – $1600</option>
+    </select>
+
+    <div id="deposit">Deposit: $0</div>
+
+    <label for="details">Event or Feature Details *</label>
+    <textarea id="details" name="details" rows="5" required></textarea>
+
+    <div class="cashapp-link">
+      Send 50% deposit via <strong>Cash App</strong> to: <br />
+      <a href="https://cash.app/$gcoderadiofm" target="_blank">$gcoderadiofm</a>
+    </div>
+
+    <button type="submit">Submit Booking Request</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('bookingForm');
+    const typeSelect = document.getElementById('type');
+    const depositDisplay = document.getElementById('deposit');
+
+    typeSelect.addEventListener('change', () => {
+      const value = typeSelect.value;
+      let deposit = 0;
+      if (value === 'feature') deposit = 500;
+      if (value === 'performance') deposit = 800;
+      depositDisplay.textContent = `Deposit: $${deposit}`;
+    });
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert("Booking request sent! Please send deposit via Cash App to $gcoderadiofm. We'll contact you shortly.");
+      form.reset();
+      depositDisplay.textContent = "Deposit: $0";
+    });
+  </script>
+</body>
+</html>
