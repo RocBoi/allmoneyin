@@ -1,85 +1,45 @@
 <!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RocBoi Quez | Hip-Hop's New Legend</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #001f3f, #cccccc);
-      color: #fff;
-      text-align: center;
-    }
-    header {
-      padding: 2em;
-      background: linear-gradient(to right, #001f3f, #0074D9);
-      color: silver;
-      font-size: 2em;
-      font-weight: bold;
-    }
-    nav {
-      background: #001f3f;
-      padding: 1em;
-    }
-    nav a {
-      margin: 0 1em;
-      color: #ccc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 2em;
-    }
-    .featured-image {
-      max-width: 90%;
-      border: 3px solid #0074D9;
-      border-radius: 12px;
-      margin: 2em auto;
-    }
-    .popup {
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      background: #fff;
-      color: #000;
-      padding: 1em;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-    a.button {
-      display: inline-block;
-      background: #0074D9;
-      color: #fff;
-      padding: 0.75em 1.5em;
-      border-radius: 6px;
-      text-decoration: none;
-      margin-top: 1em;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    ROCBOI QUEZ<br />HIP-HOP'S NEW LEGEND
-  </header>  <nav>
-    <a href="music.html">Music</a>
-    <a href="videos.html">Videos</a>
-    <a href="merch.html">Merch</a>
-    <a href="newsletter.html">Newsletter</a>
-  </nav>  <section>
-    <h2>New Release: Summer of the Real</h2>
-    <a href="https://bentleyrecords.lnk.to/WizKhalifa-SummerOfTheReal?fbclid=PAZXh0bgNhZW0CMTEAAaeOuxOqcCSRRLGuJAvnWuBDOyf6CgAIKaQUAhY1kgv6u0D0M5U-bl2eQAi0Hg_aem_Lcq2qspl2CRYYQiP8LYDHA" target="_blank">
-      <img class="featured-image" src="summer-of-the-real-cover.jpg" alt="Summer of the Real Cover">
-    </a>
-  </section>  <section>
-    <h2>RocBoi Quez x DJ VIP</h2>
-    <p>
-      RocBoi Quez links with DJ VIP to launch a new era of independent dominance. As an artist under exclusive publishing with VIP Access Publishing, Quez is using the BentleyRecords.io artist development platform to elevate his craft and global reach.
-      This collaboration marks the beginning of a new chapter, highlighted by the support of industry giant Wiz Khalifa of Taylor Gang.
-    </p>
-  </section>  <div class="popup">
-    <p><strong>🔥 Official RocBoi Quez Merch!</strong></p>
-    <a href="https://www.redbubble.com/shop/ap/172231642?asc=u" target="_blank">Shop Now</a>
-  </div>
-</body>
+  <header style="background: linear-gradient(to right, #0f52ba, #c0c0c0); color: white; text-align: center; padding: 2rem 1rem;">
+    <h1 style="font-size: 3rem; font-weight: bold;">ROCBOI QUEZ</h1>
+    <p style="font-size: 1.5rem; letter-spacing: 2px;">HIP-HOP'S NEW LEGEND</p>
+  </header>  <section style="text-align: center; margin: 2rem auto;">
+    <img src="assets/images/Screenshot_20250620-160150.png" alt="Summer of the Real Cover Art" style="max-width: 100%; height: auto;">
+    <br><br>
+    <a href="https://bentleyrecords.lnk.to/WizKhalifa-SummerOfTheReal?fbclid=PAZXh0bgNhZW0CMTEAAaeOuxOqcCSRRLGuJAvnWuBDOyf6CgAIKaQUAhY1kgv6u0D0M5U-bl2eQAi0Hg_aem_Lcq2qspl2CRYYQiP8LYDHA" target="_blank" style="font-size: 1.2rem; color: #0f52ba; font-weight: bold; text-decoration: underline;">🎵 PreSave “Summer of the Real” by Wiz Khalifa</a>
+  </section>  <section style="padding: 2rem;">
+    <h2>RocBoi Quez x DJ VIP Partnership</h2>
+    <p>RocBoi Quez is taking his journey to new heights with an exclusive publishing deal through VIP Access Publishing. The partnership leads into a groundbreaking artist development platform on BentleyRecords.io, featuring major industry names including Taylor Gang’s boss, Wiz Khalifa. Get ready for a new wave of music, merch, and motion.</p>
+  </section>  <nav style="text-align: center; margin: 2rem auto;">
+    <a href="music.html" style="margin: 0 1rem; font-weight: bold; color: #0f52ba;">Music</a>
+    <a href="videos.html" style="margin: 0 1rem; font-weight: bold; color: #0f52ba;">Videos</a>
+    <a href="merch.html" style="margin: 0 1rem; font-weight: bold; color: #0f52ba;">Merch</a>
+    <a href="newsletter.html" style="margin: 0 1rem; font-weight: bold; color: #0f52ba;">Newsletter</a>
+  </nav>  <!-- Redbubble Pop-up -->  <script>
+    window.onload = function() {
+      setTimeout(function() {
+        let popup = document.createElement('div');
+        popup.style.position = 'fixed';
+        popup.style.bottom = '20px';
+        popup.style.right = '20px';
+        popup.style.background = '#ffffff';
+        popup.style.border = '2px solid #0f52ba';
+        popup.style.padding = '10px';
+        popup.style.zIndex = '9999';
+        popup.innerHTML = `
+          <a href="https://www.redbubble.com/shop/ap/172231642?asc=u" target="_blank">
+            <img src="assets/images/dominos-popup.jpg" alt="Fan Merch" style="max-width: 200px; height: auto;">
+            <p style="margin: 0; color: #0f52ba; font-weight: bold;">Shop RocBoi Quez Fan Merch</p>
+          </a>
+        `;
+        document.body.appendChild(popup);
+      }, 3000);
+    }
+  </script></body>
 </html>
