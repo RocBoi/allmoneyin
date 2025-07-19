@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking | RocBoi Quez</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #b0c4de;
+    }
+    .section {
+      margin: 40px auto;
+      max-width: 800px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00bcd4;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background: #333;
+      border: 1px solid #555;
+      color: #fff;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #00bcd4;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #03a9f4;
+    }
+    .highlight {
+      background: rgba(0, 188, 212, 0.2);
+      padding: 10px;
+      border-left: 5px solid #00bcd4;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>RocBoi Quez | Booking & Collaborations</h1>
+
+  <div class="section">
+    <h2>📬 Booking & Contact Info</h2>
+    <p>Email inquiries to: <strong>gcode@atlquez.com</strong></p>
+    <div class="highlight">
+      <p><strong>🎬 VIDEO SHOOT ALERT:</strong><br>
+      <strong>Project:</strong> GREATNESS (Official Music Video)<br>
+      <strong>Date:</strong> Tuesday, July 30th, 2025<br>
+      <strong>Time:</strong> Timeslots TBA via email confirmation<br>
+      <a href="https://share.google/lRGIwVyKrqimkbR0h" target="_blank">
+        <button>🎟️ Buy Video Shoot Ticket</button>
+      </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🎤 Request a Feature</h2>
+    <p>Price: <strong>$1000</strong> USD per feature. Includes full creative collaboration. Song file delivery via email.</p>
+    <form action="mailto:gcode@atlquez.com" method="post" enctype="text/plain">
+      <label>Full Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Email Address:</label>
+      <input type="email" name="email" required>
+
+      <label>Track Details or Link:</label>
+      <textarea name="details" rows="4" placeholder="Include YouTube/Drive/Dropbox etc."></textarea>
+
+      <label>Preferred Turnaround Time:</label>
+      <select name="turnaround">
+        <option value="3-5 days">3-5 Days</option>
+        <option value="1 week">1 Week</option>
+        <option value="2 weeks">2 Weeks</option>
+      </select>
+
+      <p><strong>💵 Payment:</strong> Send $1000 to <strong>$GCodePublishing</strong> on CashApp before submitting form.</p>
+
+      <button type="submit">Submit Feature Request</button>
+    </form>
+  </div>
+
+  <div class="section">
+    <h2>✍️ Songwriter Request</h2>
+    <p>Professional songwriting in Hip-Hop and R&B styles.<br>
+    <strong>$1500</strong> per custom track (Duration: 2:54 - 3:32).</p>
+
+    <form action="mailto:gcode@atlquez.com" method="post" enctype="text/plain">
+      <label>Your Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Artist Name (if different):</label>
+      <input type="text" name="artist">
+
+      <label>Preferred Style or Artist Reference:</label>
+      <input type="text" name="reference">
+
+      <label>Describe your vision for the track:</label>
+      <textarea name="vision" rows="5"></textarea>
+
+      <p><strong>💵 Payment:</strong> Send $1500 to <strong>$GCodePublishing</strong> on CashApp before submitting form.</p>
+
+      <button type="submit">Submit Song Request</button>
+    </form>
+  </div>
+
+</body>
+</html>
