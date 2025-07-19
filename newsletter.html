@@ -1,39 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hip-Hop Industry & Songwriter News | ATLQUEZ</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body style="font-family:Arial, sans-serif;background:#000;color:#fff;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hip-Hop Business Newsletter | atlQuez.com</title>
+  <meta name="description" content="Get the latest in hip-hop news, marketing, publishing, and licensing opportunities. Powered by FeedDspot and The MLC." />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0c0c1f;
+      color: #dce3f3;
+    }header {
+  padding: 1em;
+  text-align: center;
+  background-color: #1a1a40;
+}
 
-  <header style="text-align:center;padding:40px 0;">
-    <h1 style="color:silver;">Latest Hip-Hop Industry News & Business Tools</h1>
-    <p style="color:#1e90ff;">Auto-updated from top sources. Refreshes daily.</p>
-  </header>
+h1 {
+  margin: 0.5em 0;
+  font-size: 2em;
+  color: #7db9e8;
+}
 
-  <section style="padding:20px;">
-    <!-- Embed Feedspot widget code here -->
-    <iframe src="https://embed.feedspot.com/hhhfeed/widget/your_widget_id/" width="100%" height="600" frameborder="0" scrolling="yes"></iframe>
-  </section>
+.description {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  color: #b3cde0;
+}
 
-  <!-- MLC Section -->
-  <section style="background-color:#f5f5f5;padding:40px;text-align:center;">
-  <img src="https://themlc.com/themes/custom/themlc/images/logo.svg" alt="The MLC Logo" style="width:200px;margin-bottom:20px;" />
-  <h2 style="color:#0c2d57;">Why Every Independent Artist Needs The MLC</h2>
-  <p style="max-width:700px;margin:auto;font-size:18px;line-height:1.6;color:#333;">
-    The Mechanical Licensing Collective (The MLC) is a nonprofit organization that helps music creators and publishers collect digital audio mechanical royalties from streaming services like Spotify, Apple Music, and Tidal. If you're a songwriter, producer, or composer and your music is streamed in the U.S., you're likely owed money you haven’t been paid yet.
-  </p>
-  <a href="https://www.themlc.com/join" target="_blank" style="display:inline-block;margin-top:20px;background:#0c2d57;color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:bold;">
-    Join The MLC Now
-  </a>
-  </section>
-  <!-- Paste the section code provided above here -->
+.feed-section, .mlc-section {
+  max-width: 1000px;
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #111133;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(125, 185, 232, 0.2);
+}
 
-  <footer style="text-align:center;padding:30px;color:silver;">
-    &copy; 2025 ATLQUEZ | Powered by RocBoi Quez
+iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 8px;
+}
+
+.join-btn {
+  display: inline-block;
+  background-color: #7db9e8;
+  color: #0c0c1f;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.subscribe-box {
+  text-align: center;
+  margin: 3em auto;
+}
+
+input[type="email"] {
+  padding: 0.5em;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-right: 0.5em;
+}
+
+button {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  background-color: #7db9e8;
+  color: #0c0c1f;
+  cursor: pointer;
+}
+
+footer {
+  padding: 2em;
+  text-align: center;
+  background-color: #1a1a40;
+  color: #7db9e8;
+}
+
+  </style>
+</head><body>
+  <header>
+    <h1>Hip-Hop Business & Industry Insights</h1>
+    <p class="description">Stay updated with the latest in publishing, licensing, tour drops & music marketing opportunities.</p>
+  </header>  <section class="feed-section">
+    <h2>📰 Latest Hip-Hop Business Headlines</h2>
+    <iframe src="https://embed.feedspot.com/hiphopfeed" title="Hip-Hop RSS Feed from FeedDspot" scrolling="yes"></iframe>
+  </section>  <section class="mlc-section">
+    <h2>🎶 Why Join The MLC?</h2>
+    <p>The Mechanical Licensing Collective is a game-changer for musicians. If you write or publish music, you may be owed mechanical royalties. The MLC ensures you get paid transparently, efficiently, and fairly.</p>
+    <a class="join-btn" href="https://themlc.com" target="_blank">Join Now</a>
+  </section>  <section class="subscribe-box">
+    <h2>📬 Subscribe for Sync & Tour Alerts</h2>
+    <form action="mailto:gcode@atlquez.com" method="post" enctype="text/plain">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>  <footer>
+    &copy; 2025 atlQuez.com — All Rights Reserved
   </footer>
-
-</body>
-</html>
+</body
