@@ -2,53 +2,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RocBoi Quez | ATLQuez.com</title>
-  <meta name="description" content="Official RocBoi Quez Website - News, Music, Merch & More. Join the movement at ATLQuez.com." />
-  <meta name="keywords" content="RocBoi Quez, ATLQuez, Hip-Hop, Rap, Music, Merch, X-Men, PreSave" />
+  <meta name="description" content="RocBoi Quez Official Website | PreSave X-Men, Get Out Your Feelings (ChpdNScrwd) & More" />
+  <meta name="keywords" content="RocBoi Quez, Hip-Hop, X-Men, New Music, PreSave, Atlanta Rap, Merch, Newsletter" />
   <meta name="author" content="RocBoi Quez" />
-  <link rel="stylesheet" href="styles.css" />
+  <title>RocBoi Quez | Official Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+    header {
+      background-color: #000;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    nav {
+      background-color: #1e1e1e;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff0;
+    }
+    .main {
+      padding: 2rem;
+      text-align: center;
+    }
+    .highlight {
+      background: #000;
+      padding: 2rem;
+      margin: 2rem auto;
+      border: 2px solid #fff;
+      max-width: 800px;
+      position: relative;
+      animation: flash 2s infinite alternate;
+    }
+    @keyframes flash {
+      from { box-shadow: 0 0 10px #fff; }
+      to { box-shadow: 0 0 30px #ff0; }
+    }
+    .highlight img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .newsletter {
+      margin-top: 3rem;
+    }
+    input[type="email"] {
+      padding: 0.5rem;
+      width: 300px;
+      border-radius: 5px;
+      border: none;
+      margin-right: 1rem;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      background: #ff0;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #1e1e1e;
+      color: #999;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>RocBoi Quez</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#music">Music</a></li>
-        <li><a href="#merch">Merch</a></li>
-        <li><a href="#newsletter">Newsletter</a></li>
-      </ul>
-    </nav>
-  </header>  <main>
-    <section id="about">
-      <h2>About RocBoi Quez</h2>
-      <p>Welcome to the official home of RocBoi Quez. Dive into the journey, sound, and vision of Atlanta's rising hip-hop star. Stay tuned for exclusive releases, merch, and more.</p>
-    </section><section id="music">
-  <h2>Latest Release: X-MEN (ChpdNScrwd)</h2>
-  <img src="RocboiQuez_X-Men_coverart.jpg" alt="X-Men Cover Art" style="max-width: 300px; display: block; margin: 1rem 0;"/>
-  <p>The highly anticipated track <strong>X-MEN</strong> is here. Be the first to experience the chopped and screwed version that's taking over the airwaves.</p>
-  <a href="https://presave.link/x-men" target="_blank" style="display:inline-block; padding:10px 20px; background:#000; color:#fff; text-decoration:none; border-radius:5px;">Pre-Save X-MEN Now</a>
+  </header>
+  <nav>
+    <a href="#music">Music</a>
+    <a href="#merch">Merch</a>
+    <a href="#newsletter">Newsletter</a>
+  </nav>  <div class="main">
+    <section id="music" class="highlight">
+      <h2>🔥 New Single: X-Men (ChpdNScrwd)</h2>
+      <img src="RocboiQuez_X-Men_coverart.jpg" alt="X-Men Cover Art">
+      <p><a href="https://presave.link/x-men" style="color: #ff0; font-weight: bold;">🎧 PreSave Now on All Platforms</a></p>
+    </section><section id="merch">
+  <h2>🛒 Official RocBoi Quez Merch</h2>
+  <p><a href="https://www.redbubble.com/shop/ap/172231642?asc=u" target="_blank" style="color:#ff0">Shop Fan Favorites</a></p>
 </section>
 
-<section id="merch">
-  <h2>Fan Merch</h2>
-  <p>Get your exclusive RocBoi Quez gear now. Show your support with official merch drops curated just for the fans.</p>
-  <a href="https://www.redbubble.com/shop/ap/172231642?asc=u" target="_blank">
-    <img src="https://www.redbubble.com/shop/ap/172231642?asc=u" alt="RocBoi Quez Fan Merch" style="max-width: 100%; height: auto;">
-  </a>
-</section>
-
-<section id="newsletter">
-  <h2>Stay Connected</h2>
-  <p>Sign up to get the latest drops, news, and exclusive updates straight to your inbox.</p>
+<section id="newsletter" class="newsletter">
+  <h2>📬 Stay in the Loop</h2>
   <form action="https://formspree.io/f/your-form-id" method="POST">
-    <input type="email" name="email" placeholder="Enter your email" required />
+    <input type="email" name="email" placeholder="Enter your email to join newsletter" required>
     <button type="submit">Subscribe</button>
   </form>
 </section>
 
-  </main>  <footer>
-    <p>&copy; 2025 RocBoi Quez. All rights reserved.</p>
+  </div>  <footer>
+    &copy; 2025 RocBoi Quez | All Rights Reserved
   </footer>
 </body>
 </html>
