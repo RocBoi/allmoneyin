@@ -2,121 +2,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="RocBoi Quez Official Website | PreSave X-Men, Get Out Your Feelings (ChpdNScrwd) & More" />
-  <meta name="keywords" content="RocBoi Quez, Hip-Hop, X-Men, New Music, PreSave, Atlanta Rap, Merch, Newsletter" />
-  <meta name="author" content="RocBoi Quez" />
-  <title>RocBoi Quez | Official Website</title>
+  <meta name="description" content="Official RocBoi Quez Website - Hip-Hop's New Legend" />
+  <title>RocBoi Quez | Hip-Hop's New Legend</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0a0a23;
+      color: white;
     }
     header {
-      background-color: #000;
-      padding: 1rem;
+      background: linear-gradient(90deg, #0f52ba, #c0c0c0);
+      padding: 40px;
       text-align: center;
     }
     header h1 {
-      margin: 0;
-      font-size: 2rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
+      font-size: 3rem;
+      color: white;
+      text-shadow: 2px 2px #000;
     }
     nav {
-      background-color: #1e1e1e;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
+      background-color: #121212;
+      padding: 10px 0;
+      text-align: center;
     }
     nav a {
+      margin: 0 15px;
       color: #fff;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
+      font-size: 1rem;
     }
     nav a:hover {
-      color: #ff0;
+      color: #0f52ba;
     }
-    .main {
-      padding: 2rem;
-      text-align: center;
+    .section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
     }
-    .highlight {
-      background: #000;
-      padding: 2rem;
-      margin: 2rem auto;
-      border: 2px solid #fff;
-      max-width: 800px;
-      position: relative;
-      animation: flash 2s infinite alternate;
+    .flash {
+      animation: flash 1.5s infinite;
     }
     @keyframes flash {
-      from { box-shadow: 0 0 10px #fff; }
-      to { box-shadow: 0 0 30px #ff0; }
+      0%, 100% {opacity: 1;}
+      50% {opacity: 0.5;}
     }
-    .highlight img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 10px;
-      margin-bottom: 1rem;
+    .popup {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: white;
+      color: black;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #fff;
     }
-    .newsletter {
-      margin-top: 3rem;
-    }
-    input[type="email"] {
-      padding: 0.5rem;
-      width: 300px;
-      border-radius: 5px;
-      border: none;
-      margin-right: 1rem;
-    }
-    button {
-      padding: 0.5rem 1rem;
-      background: #ff0;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    footer {
-      background-color: #1e1e1e;
-      color: #999;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
+    .popup img {
+      width: 100px;
+      display: block;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>RocBoi Quez</h1>
-  </header>
-  <nav>
-    <a href="#music">Music</a>
-    <a href="#merch">Merch</a>
-    <a href="#newsletter">Newsletter</a>
-  </nav>  <div class="main">
-    <section id="music" class="highlight">
-      <h2>🔥 New Single: X-Men (ChpdNScrwd)</h2>
-      <img src="RocboiQuez_X-Men_coverart.jpg" alt="X-Men Cover Art">
-      <p><a href="https://presave.link/x-men" style="color: #ff0; font-weight: bold;">🎧 PreSave Now on All Platforms</a></p>
-    </section><section id="merch">
-  <h2>🛒 Official RocBoi Quez Merch</h2>
-  <p><a href="https://www.redbubble.com/shop/ap/172231642?asc=u" target="_blank" style="color:#ff0">Shop Fan Favorites</a></p>
-</section>
-
-<section id="newsletter" class="newsletter">
-  <h2>📬 Stay in the Loop</h2>
-  <form action="https://formspree.io/f/your-form-id" method="POST">
-    <input type="email" name="email" placeholder="Enter your email to join newsletter" required>
-    <button type="submit">Subscribe</button>
-  </form>
-</section>
-
-  </div>  <footer>
-    &copy; 2025 RocBoi Quez | All Rights Reserved
-  </footer>
+    <h1>ROCBOI QUEZ<br><span class="flash">HIP-HOP'S NEW LEGEND</span></h1>
+  </header>  <nav>
+    <a href="index.html">Home</a>
+    <a href="music.html">Music</a>
+    <a href="videos.html">Videos</a>
+    <a href="merch.html">Merch</a>
+    <a href="newsletter.html">Newsletter</a>
+  </nav>  <div class="section">
+    <h2>X-Men Release</h2>
+    <a href="https://vyd.co/X-men?fbclid=IwY2xjawLoBKlleHRuA2FlbQIxMQABHuPd8cSALJiXtu9hKAjI3ttDWIRMEv2-7s_djATm-4HKhVJZqQ088hxlBCKH_aem_u24MDxZv4Dh4ytTKdG3FIA" target="_blank">
+      <img src="RocboiQuez_X-Men_coverart.jpg" alt="X-Men Cover" style="width:100%; max-width:600px; border-radius: 8px;">
+    </a>
+  </div>  <div class="section">
+    <h2>RocBoi Quez x DJ VIP</h2>
+    <p>RocBoi Quez has joined forces with DJ VIP, the mastermind behind Nipsey Hussle’s legendary mixtapes. With an exclusive publishing deal through VIP Access Publishing, RocBoi Quez is making major waves in the independent hip-hop scene. His upcoming artist development deal with BentleyRecords.io will launch with a high-profile feature — the one and only Wiz Khalifa of Taylor Gang.</p>
+  </div>  <div class="popup">
+    <img src="https://www.redbubble.com/shop/ap/172231642?asc=u" alt="RocBoi Quez Merch">
+    <a href="https://www.redbubble.com/shop/ap/172231642?asc=u" target="_blank">Exclusive Merch Drop - Shop Now</a>
+  </div>
 </body>
 </html>
