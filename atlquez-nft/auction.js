@@ -38,3 +38,35 @@ document.getElementById('bidForm').addEventListener('submit', function(e) {
     alert("❌ Bid must be higher than current highest.");
   }
 });
+let countdownTime = new Date().getTime() + (48 * 60 * 60 * 1000); // 48 hours from now
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = countdownTime - now;
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("countdown").innerHTML = `${hours}h ${minutes}m ${seconds}s`;
+  if (distance < 0) {
+    document.getElementById("countdown").innerHTML = "Auction Ended";
+  }
+}
+setInterval(updateCountdown, 1000);
+
+async function connectWallet() {
+  if (typeof window.ethereum !== 'undefined') {
+    try {
+      await window.ethereum.request({ method: 'eth_requestAccounts' });
+      document.getElementById("status").innerText = "Wallet connected!";
+    } catch (error) {
+      console.error("Wallet connection failed", error);
+    }
+  } else {
+    alert("Install MetaMask to connect");
+  }
+}
+
+function placeBid() {
+  const bidAmount = document.getElementById("bidAmount").value;
+  document.getElementById("status").innerText = `Bid of ${bidAmount} submitted (mock submission).`;
+}
