@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RocBoi Quez NFT Auction | atlQuez.com</title>
+  <style>
+    body {
+      background: #111;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      text-align: center;
+    }
+    video {
+      max-width: 100%;
+      border: 4px solid #444;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    form {
+      margin-top: 1rem;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 1rem;
+    }
+    .leaderboard {
+      margin-top: 2rem;
+      background: #222;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    #timer {
+      font-size: 1.2rem;
+      color: #ffd700;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔥 NFT Bidding Auction – RocBoi Quez Exclusive</h1>
+  <div id="timer">Auction ends in: loading...</div>
+
+  <video controls poster="poster.jpg">
+    <source src="https://cloudflare-ipfs.com/ipfs/QmWUoHmosBfPk52syrVc5em8HiuncaZRcyTPBMZqpSaWmG" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <form id="bidForm">
+    <input type="text" id="wallet" placeholder="Your Wallet Address" required />
+    <input type="number" id="amount" placeholder="Bid Amount (ETH)" required min="0.01" step="0.01" />
+    <button type="submit">Place Bid</button>
+  </form>
+
+  <div class="leaderboard">
+    <h2>📈 Live Leaderboard</h2>
+    <ul id="bidsList"></ul>
+  </div>
+
+  <script>
+    const END_TIME = Date.now() + 1000 * 60 * 60 * 48; // 48 hours from now
+    const timerEl = document.getElementById("timer");
+    const bidsList = document.getElementById("bidsList");
+    const bidForm = document.getElementById("bidForm");
+
+    let bids = [];
+
+    function updateTimer() {
+      const now = Date.now();
+      const diff = END_TIME - now;
+
+      if (diff <= 0) {
+        timerEl.textContent = "⏰ Auction ended!";
+        bidForm.style.display = "none";
+        return;
+      }
+
+      const hours = Math.floor(diff / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      timerEl.textContent = `Auction ends in: ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    setInterval(updateTimer, 1000);
+    updateTimer();
+
+    bidForm.addEventListener("submit", e => {
+      e.preventDefault();
+      const wallet = document.getElementById("wallet").value;
+      const amount = parseFloat(document.getElementById("amount").value);
+
+      if (!wallet || isNaN(amount)) return;
+
+      bids.push({ wallet, amount });
+      bids.sort((a, b) => b.amount - a.amount);
+
+      bidsList.innerHTML = bids
+        .map((bid, i) => `<li>${i + 1}. ${bid.wallet.slice(0, 6)}... bid <strong>${bid.amount.toFixed(2)} ETH</strong></li>`)
+        .join("");
+
+      // (Optional) POST to backend (replace with ngrok URL later)
+      // fetch("https://your-ngrok-url.com/bid", {
+      //   method: "POST",
+      //   headers: { "Content-Type": "application/json" },
+      //   body: JSON.stringify({ wallet, amount }),
+      // });
+    });
+  </script>
+</body>
+</html>
