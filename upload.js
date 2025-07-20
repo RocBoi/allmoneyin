@@ -4,7 +4,7 @@ const path = require('path');
 const mime = require('mime');
 
 const API_KEY = 'd3d79a85.6ded03074b334cd4b42f59013f61163e'; // Your actual NFT.Storage API key
-const videoPath = './rocboiquez_dumbbooty_compressed.mp4'; // Updated video file name
+const videoPath = './rocboiquez_dumbbooty_.mp4'; // Updated video file name
 
 async function main() {
   const client = new NFTStorage({ token: API_KEY });
