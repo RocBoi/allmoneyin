@@ -1,0 +1,266 @@
+/* Reset + Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Urbanist', sans-serif;
+  background-color: #0e0e0e;
+  color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6b00;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #191919, #111);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ff6b00;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #ff6b00;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #e65a00;
+}
+
+.button.highlight {
+  background-color: #fff;
+  color: #0e0e0e;
+}
+
+/* Promo Banner */
+.promo-banner {
+  background-color: #202020;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-top: 2rem;
+}
+
+.promo-banner h2 {
+  color: #ff6b00;
+  margin-bottom: 1rem;
+}
+
+.promo-banner p {
+  margin-bottom: 1rem;
+}
+
+/* Shorts Section */
+.shorts-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff6b00;
+}
+
+.shorts-section iframe {
+  max-width: 100%;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Video Container */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin: 2rem auto;
+  max-width: 960px;
+}
+
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/* Spotify Section */
+.spotify-section {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.spotify-section h2 {
+  color: #1db954;
+  margin-bottom: 1rem;
+}
+
+.spotify-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Distribution Section */
+.distribution-section {
+  background-color: #111;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.distribution-section h2 {
+  color: #ff6b00;
+  margin-bottom: 1rem;
+}
+
+.distribution-section .highlight {
+  color: #1db954;
+  font-weight: bold;
+}
+
+/* Responsive Typography */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .button {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+}
+#summer-of-the-real {
+  background: linear-gradient(to right, #000000, #1a1a1a);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 3px solid #ff4500;
+}
+
+#summer-of-the-real h1 {
+  font-size: 2.5rem;
+  font-family: 'Impact', sans-serif;
+  letter-spacing: 1px;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+#summer-of-the-real p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+#summer-of-the-real img {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 16px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.6);
+}
+
+#summer-of-the-real a.btn-listen-now {
+  display: inline-block;
+  background: #ff4500;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+#summer-of-the-real a.btn-listen-now:hover {
+  background-color: #e03e00;
+  transform: scale(1.05);
+}
+/* Enhanced Distribution Section for DJ VIP */
+#djvip-publishing {
+  background: linear-gradient(to right, #111, #1a1a1a);
+  color: #ffcc00;
+  padding: 50px 25px;
+  text-align: center;
+  border-top: 3px solid #ff4500;
+  border-bottom: 3px solid #ff4500;
+}
+
+#djvip-publishing h2 {
+  font-size: 2.2rem;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 900;
+  color: #facc15;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#djvip-publishing p {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  color: #f3f3f3;
+}
+
+#djvip-publishing a.button {
+  background-color: #ff4500;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#djvip-publishing a.button:hover {
+  background-color: #e03e00;
+  transform: scale(1.05);
+}
