@@ -1,1 +1,15 @@
-
+{
+  "name": "DumbBooty - NFT Edition",
+  "description": "Exclusive fan merch NFT by RocBoi Quez. Auctioned with a 48hr countdown to the highest bidder.",
+  "animation_url": "ipfs://QmWUoHmosBfPk52syrVc5em8HiuncaZRcyTPBMZqpSaWmG",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "RocBoi Quez"
+    },
+    {
+      "trait_type": "Drop",
+      "value": "Fan Auction 48hr"
+    }
+  ]
+}
