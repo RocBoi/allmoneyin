@@ -1,21 +1,27 @@
-console.log("📦 Script started...");
-import { NFTStorage, File } from 'nft.storage';
-import fs from 'fs';
-import path from 'path';
-import mime from 'mime';
+// ~/gcode-projects/atlquez-nft/scripts/uploadToIPFS.js
 
-const NFT_STORAGE_API_KEY = 'd3d79a85.6ded03074b334cd4b42f59013f61163e';
+import { NFTStorage, File } from 'nft.storage'
+import fs from 'fs'
+import path from 'path'
+import mime from 'mime'
 
-const client = new NFTStorage({ token: NFT_STORAGE_API_KEY });
+const API_KEY = process.env.NFT_STORAGE_API_KEY
+const client = new NFTStorage({ token: API_KEY })
 
-async function uploadFile(filePath) {
-  const content = await fs.promises.readFile(filePath);
-  const type = mime.getType(filePath);
-  const file = new File([content], path.basename(filePath), { type });
+async function storeVideo() {
+  const filePath = './assets/rocboiquez_dumbbooty_compressed.mp4'
+  const content = await fs.promises.readFile(filePath)
+  const type = mime.getType(filePath)
+  const file = new File([content], path.basename(filePath), { type })
 
-  const cid = await client.storeBlob(file);
-  console.log('✅ CID:', cid);
-  console.log('🔗 IPFS URL: https://ipfs.io/ipfs/' + cid);
+  const metadata = await client.store({
+    name: 'RocBoi Quez - Dumb Booty (NFT Edition)',
+    description: 'Exclusive 48hr auction video NFT by RocBoi Quez.',
+    image: file
+  })
+
+  console.log('Metadata URI:', metadata.url)
+  fs.writeFileSync('./metadata/ipfs_hash.txt', metadata.url)
 }
 
-uploadFile('/storage/emulated/0/Download/rocboi_drop.mp4/rocboiquez - dumbbooty.mp4');
+storeVideo()
