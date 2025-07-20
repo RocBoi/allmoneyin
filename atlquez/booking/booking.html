@@ -4,32 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Book RocBoi Quez</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Book RocBoi Quez</h1>
-  <form id="bookingForm">
-    <label for="name">Your Full Name:</label><br />
-    <input type="text" id="name" name="name" required /><br /><br />
+  <div class="booking-form">
+    <h1>Book RocBoi Quez</h1>
+    <form id="bookingForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" required />
 
-    <label for="email">Email Address:</label><br />
-    <input type="email" id="email" name="email" required /><br /><br />
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" required />
 
-    <label for="bookingType">Select Booking Type:</label><br />
-    <select id="bookingType" name="bookingType" required>
-      <option value="">-- Select Option --</option>
-      <option value="feature">Feature - $1000</option>
-      <option value="venue">Venue Performance - $1600</option>
-    </select><br /><br />
+      <label for="type">Booking Type:</label>
+      <select id="type" required>
+        <option value="">-- Select --</option>
+        <option value="feature">Feature ($1,000)</option>
+        <option value="venue">Venue Performance ($1,600)</option>
+      </select>
 
-    <label for="message">Additional Info:</label><br />
-    <textarea id="message" name="message" rows="5"></textarea><br /><br />
+      <label for="message">Message:</label>
+      <textarea id="message" required></textarea>
 
-    <button type="submit">Submit Booking Request</button>
-  </form>
-
-  <p><strong>Payment via CashApp:</strong><br />
-  $RocBoiQuez or scan QR code after confirmation.</p>
+      <button type="submit">Submit Booking</button>
+    </form>
+    <div id="responseMessage"></div>
+  </div>
 
   <script src="booking.js"></script>
 </body>
