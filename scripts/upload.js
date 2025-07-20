@@ -1,3 +1,4 @@
+console.log("📦 Script started...");
 import { NFTStorage, File } from 'nft.storage';
 import fs from 'fs';
 import path from 'path';
