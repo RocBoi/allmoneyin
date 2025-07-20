@@ -9,7 +9,7 @@ const API_KEY = process.env.NFT_STORAGE_API_KEY
 const client = new NFTStorage({ token: API_KEY })
 
 async function storeVideo() {
-  const filePath = './assets/rocboiquez_dumbbooty_compressed.mp4'
+  const filePath = './assets/rocboiquez_dumbbooty_.mp4'
   const content = await fs.promises.readFile(filePath)
   const type = mime.getType(filePath)
   const file = new File([content], path.basename(filePath), { type })
