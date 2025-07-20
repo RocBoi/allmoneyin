@@ -1,0 +1,51 @@
+import { NFTStorage, File } from 'nft.storage';
+import fs from 'fs';
+import path from 'path';
+import mime from 'mime';
+import dotenv from 'dotenv';
+import { ethers } from 'ethers';
+
+dotenv.config();
+
+// Setup
+const API_KEY = process.env.NFT_STORAGE_API_KEY;
+const WALLET_PRIVATE_KEY = process.env.WALLET_PRIVATE_KEY;
+const RPC_URL = process.env.RPC_URL;
+const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS;
+const ABI = JSON.parse(fs.readFileSync('./abi.json', 'utf-8')); // Your contract ABI
+
+const client = new NFTStorage({ token: API_KEY });
+
+async function fileFromPath(filePath) {
+  const content = await fs.promises.readFile(filePath);
+  const type = mime.getType(filePath);
+  return new File([content], path.basename(filePath), { type });
+}
+
+async function main() {
+  const videoPath = './rocboiquez - dumbbooty.mp4';
+  const videoFile = await fileFromPath(videoPath);
+
+  // Upload to IPFS
+  console.log('Uploading video to IPFS...');
+  const metadata = await client.store({
+    name: 'RocBoi Quez - DumbBooty',
+    description: 'Official music video NFT by RocBoi Quez.',
+    image: videoFile, // Used as "image" even for video
+  });
+
+  const tokenURI = metadata.url; // IPFS URI
+  console.log('✅ IPFS URI:', tokenURI);
+
+  // Mint on chain
+  const provider = new ethers.JsonRpcProvider(RPC_URL);
+  const wallet = new ethers.Wallet(WALLET_PRIVATE_KEY, provider);
+  const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, wallet);
+
+  console.log('Minting NFT on chain...');
+  const tx = await contract.mint(wallet.address, tokenURI); // Replace with your contract’s mint() method
+  await tx.wait();
+  console.log('✅ NFT Minted! TX Hash:', tx.hash);
+}
+
+main().catch(console.error);
