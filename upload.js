@@ -1,24 +1,27 @@
-const { NFTStorage, File } = require("nft.storage");
-const fs = require("fs");
-const path = require("path");
-require("dotenv").config();
+const { NFTStorage, File } = require('nft.storage');
+const fs = require('fs');
+const path = require('path');
+const mime = require('mime');
 
-const API_KEY = process.env.NFT_STORAGE_API_KEY;
+const API_KEY = 'd3d79a85.6ded03074b334cd4b42f59013f61163e'; // Your actual NFT.Storage API key
+const videoPath = './rocboiquez_dumbbooty_compressed.mp4'; // Updated video file name
 
 async function main() {
   const client = new NFTStorage({ token: API_KEY });
-  const filePath = path.join(__dirname, "dumbbooty.mp4");
-  const data = await fs.promises.readFile(filePath);
 
-  console.log("Uploading video to NFT.Storage...");
+  const content = await fs.promises.readFile(videoPath);
+  const type = mime.getType(videoPath);
+  const file = new File([content], path.basename(videoPath), { type });
+
   const metadata = await client.store({
-    name: "RocBoi Quez - DumbBooty Video",
-    description: "Exclusive NFT video drop by RocBoi Quez",
-    image: new File([data], "dumbbooty.mp4", { type: "video/mp4" }),
+    name: 'RocBoi Quez - DumbBooty (Compressed)',
+    description: 'Official RocBoi Quez NFT - DumbBooty Compressed MP4',
+    image: file, // The video file is stored as the image in metadata
   });
 
-  console.log("Upload complete!");
-  console.log("IPFS URL:", metadata.url);
+  console.log('✅ Metadata stored on IPFS:');
+  console.log('🧾 Metadata URI:', metadata.url);
+  console.log('🎞️ IPFS CID for video file:', metadata.data.image.href);
 }
 
-main().catch(console.error);
+main();
