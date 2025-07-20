@@ -1,0 +1,13 @@
+{
+  "name": "allmoneyin",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "upload": "node upload.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "nft.storage": "^7.0.0",
+    "dotenv": "^16.3.1"
+  }
+}
