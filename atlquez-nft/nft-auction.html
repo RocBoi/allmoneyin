@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RocBoi Quez NFT Auction</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="auction.js"></script>
+</head>
+<body>
+  <main>
+    <h1>🔥 RocBoi Quez Exclusive NFT Auction 🔥</h1>
+    <p>This NFT video is exclusively for fans. Bidding closes in:</p>
+
+    <div id="countdown" style="font-size: 2rem;"></div>
+
+    <video width="100%" controls autoplay muted loop>
+      <source src="https://ipfs.io/ipfs/QmWUoHmosBfPk52syrVc5em8HiuncaZRcyTPBMZqpSaWmG" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <section>
+      <h2>💰 Place Your Bid</h2>
+      <form id="bidForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="number" id="bid" placeholder="Bid in USD" required />
+        <button type="submit">Submit Bid</button>
+      </form>
+
+      <h3>📈 Current Highest Bid:</h3>
+      <p id="highestBid">No bids yet.</p>
+    </section>
+  </main>
+</body>
+</html>
