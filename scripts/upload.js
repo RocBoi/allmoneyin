@@ -1,33 +1,20 @@
-require('dotenv').config();
-const { NFTStorage, File } = require('nft.storage');
-const fs = require('fs');
-const path = require('path');
+import { NFTStorage, File } from 'nft.storage';
+import fs from 'fs';
+import path from 'path';
+import mime from 'mime';
 
-const API_KEY = process.env.NFT_STORAGE_API_KEY;
+const NFT_STORAGE_API_KEY = 'd3d79a85.6ded03074b334cd4b42f59013f61163e';
 
-async function main() {
-  const client = new NFTStorage({ token: API_KEY });
+const client = new NFTStorage({ token: NFT_STORAGE_API_KEY });
 
-  const filePath = './dumbbooty.mp4';
+async function uploadFile(filePath) {
   const content = await fs.promises.readFile(filePath);
-  const file = new File([content], 'dumbbooty.mp4', { type: 'video/mp4' });
+  const type = mime.getType(filePath);
+  const file = new File([content], path.basename(filePath), { type });
 
-  const metadata = await client.store({
-    name: 'DumbBootyNFT',
-    description: 'Exclusive fan NFT drop for DumbBooty.mp4\nCampaign: DumbBootyNFT\nVideographer: Ugly Visuals\nDrop Date: July 20, 2025 12:00pm EST',
-    image: file,
-    properties: {
-      campaign: 'DumbBootyNFT',
-      videographer: 'Ugly Visuals',
-      drop_date: '2025-07-20T12:00:00-05:00'
-    }
-  });
-
-  console.log('✅ Metadata stored!');
-  console.log('📦 IPFS URL:', metadata.url);
-  console.log('🆔 CID:', metadata.ipnft);
+  const cid = await client.storeBlob(file);
+  console.log('✅ CID:', cid);
+  console.log('🔗 IPFS URL: https://ipfs.io/ipfs/' + cid);
 }
 
-main().catch((err) => {
-  console.error('❌ Error uploading:', err);
-});
+uploadFile('/storage/emulated/0/Download/rocboi_drop.mp4/rocboiquez - dumbbooty.mp4');
