@@ -31,3 +31,5 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`🚀 GCode NFT Auction Server running at http://localhost:${PORT}`);
 });
+const uploadRoutes = require('./routes/upload.routes');
+app.use('/upload', uploadRoutes);
