@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DumbBootyNFT Bidding</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.6.2/dist/ethers.umd.min.js"></script>
+  <style>
+    body { font-family: Arial; padding: 2rem; }
+    video { max-width: 100%; height: auto; border-radius: 12px; margin-bottom: 1rem; }
+    button { padding: 1rem; background: purple; color: white; border: none; cursor: pointer; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>DumbBootyNFT - Place Your Bid</h1>
+
+  <video controls autoplay loop>
+    <source src="https://ipfs.io/ipfs/YOUR_CID_HERE" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <button onclick="connectAndBid()">Connect Wallet & Place Bid</button>
+
+  <script>
+    async function connectAndBid() {
+      if (typeof window.ethereum === 'undefined') {
+        alert("Please install MetaMask to place a bid.");
+        return;
+      }
+
+      const provider = new ethers.BrowserProvider(window.ethereum);
+      const signer = await provider.getSigner();
+
+      const contractAddress = "YOUR_CONTRACT_ADDRESS";
+      const abi = [ /* your smart contract ABI here */ ];
+
+      const contract = new ethers.Contract(contractAddress, abi, signer);
+
+      try {
+        const bidAmount = prompt("Enter your bid in ETH:");
+        const tx = await contract.placeBid({ value: ethers.parseEther(bidAmount) });
+        await tx.wait();
+        alert("Bid placed successfully!");
+      } catch (err) {
+        console.error(err);
+        alert("Transaction failed.");
+      }
+    }
+  </script>
+</body>
+</html>
