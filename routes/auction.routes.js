@@ -11,5 +11,9 @@ router.get('/list', async (req, res) => { // Placeholder logic res.json({ messag
 router.post('/bid', async (req, res) => { const { auctionId, userId, bidAmount } = req.body; // Placeholder logic res.json({ message: 'Bid placed', auctionId, userId, bidAmount }); });
 
 export default router;
+                                         
+import provider from "./ethers-provider.js"; // or "./web3-provider.js"
+                                         
+                        
 
             
