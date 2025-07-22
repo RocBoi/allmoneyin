@@ -9,7 +9,7 @@ if (typeof window !== "undefined" && typeof window.ethereum !== "undefined") {
 } else {
   // Server-side or no wallet
   const provider = new Web3.providers.HttpProvider(
-    "https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID"
+   "https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID"
   );
   web3 = new Web3(provider);
 }
