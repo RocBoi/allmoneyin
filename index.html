@@ -6,16 +6,86 @@
   <meta name="description" content="RocBoi Quez Official Site - Summer of the Real featuring Wiz Khalifa out now on BentleyRecords.io.">
   <meta name="keywords" content="RocBoi Quez, Wiz Khalifa, Hip-Hop, Summer of the Real, Bentley Records, DJ VIP, Taylor Gang">
   <meta name="author" content="RocBoi Quez">
-  <title>RocBoi Quez | Hip-Hop’s New Legend & DumbBootyNFT Auction</title>
-
+  <title>RocBoi Quez | Hip-Hop’s New Legend</title>
   <style>
-    /* (Same full style block as before — keep it untouched unless changing visuals) */
-    /* ... Keep all CSS styles from your original unchanged ... */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('assets/images/images.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+    }
+    header {
+      background: linear-gradient(to right, rgba(30,60,114,0.85), rgba(42,82,152,0.85));
+      padding: 2rem;
+      text-align: center;
+      color: silver;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(17, 17, 17, 0.95);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #1e90ff;
+    }
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+    img {
+      max-width: 90%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    .article {
+      background-color: rgba(28, 28, 43, 0.9);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+      text-align: left;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .stream-now {
+      display: inline-block;
+      background-color: #1e90ff;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+    .popup-ad {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      width: 300px;
+      border: 3px solid #fff;
+      background: #fff;
+      z-index: 999;
+    }
+    .popup-ad img {
+      width: 100%;
+      display: block;
+    }
   </style>
-
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4001446849582943" crossorigin="anonymous"></script>
 </head>
-
 <body>
 
   <header>
@@ -27,98 +97,26 @@
     <a href="videos.html">Videos</a>
     <a href="merch.html">Merch</a>
     <a href="booking.html">Booking</a>
-    <a href="/NFTvideoBid.html">Watch DumbBootyNFT</a>
-    <a href="/nft/NFTvideoBid">🎥 NFT Video Auction</a>
   </nav>
 
   <section>
     <h2>Summer of the Real ft. Wiz Khalifa</h2>
     <img src="assets/images/Screenshot_20250620-160150.png" alt="Summer of the Real Cover" />
-    <a class="stream-now" href="https://bentleyrecords.lnk.to/WizKhalifa-SummerOfTheReal?fbclid=PAZXh0bgNhZW0CMTEAAaeOuxOqcCSRRLGuJAvnWuBDOyf6CgAIKaQUAhY1kgv6u0D0M5U-bl2eQAi0Hg_aem_Lcq2qspl2CRYYQiP8LYDHA" target="_blank" rel="noopener">Stream Now</a>
+    <br>
+    <a class="stream-now" href="https://bentleyrecords.lnk.to/WizKhalifa-SummerOfTheReal?fbclid=PAZXh0bgNhZW0CMTEAAaeOuxOqcCSRRLGuJAvnWuBDOyf6CgAIKaQUAhY1kgv6u0D0M5U-bl2eQAi0Hg_aem_Lcq2qspl2CRYYQiP8LYDHA" target="_blank">Stream Now</a>
   </section>
 
   <section class="article">
     <h2>RocBoi Quez x DJ VIP - Exclusive Announcement</h2>
-    <p>RocBoi Quez has officially joined forces with DJ VIP to launch a new era of independent distribution and artist visibility...</p>
+    <p>RocBoi Quez has officially joined forces with DJ VIP to launch a new era of independent distribution and artist visibility. In collaboration with Bentley Records and powered by the new artist development platform, RocBoi's latest project pushes creative boundaries and secures him a seat at the table with legends. Taylor Gang’s very own Wiz Khalifa joins the lineup with a co-signed feature in “Summer of the Real.”</p>
+    <p>Stay tuned for more singles, streaming exclusives, fan merch drops, and major press coverage on RocBoi’s rise from Atlanta to the global stage.</p>
   </section>
 
-  <!-- NFT Auction Section -->
-  <section>
-    <h1 style="color:#00ff88;">RocBoi Quez - DumbBootyNFT Auction</h1>
-    <video id="nftVideo" controls>
-      <source src="https://bafybeiclbirhq4zwyska56flarpqde73pckwsdiemc4gju2ab27iz2kene.ipfs.w3s.link/" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-
-    <div class="auction-buttons">
-      <button onclick="startAuction()">Start 48-Hour Auction</button>
-      <button onclick="mintNft()">Mint NFT</button>
-      <button onclick="placeBid()">Place Bid</button>
-    </div>
-
-    <div id="countdown"></div>
-  </section>
-
-  <!-- Popup Ad -->
   <div class="popup-ad">
-    <a href="https://www.redbubble.com/shop/ap/172231642?asc=u" target="_blank" rel="noopener">
-      <img src="https://ih1.redbubble.net/image.4997231645.3642/flat,750x1000,075,f.jpg" alt="Fan Merch Ad">
+    <a href="https://www.redbubble.com/shop/ap/172231642?asc=u" target="_blank">
+      <img src="https://www.redbubble.com/shop/ap/172231642?asc=u" alt="Fan Merch Ad">
     </a>
   </div>
-
-  <!-- Overlay & Pop-up -->
-  <div id="promo-overlay"></div>
-  <div id="promo-popup" role="dialog" aria-modal="true" aria-labelledby="promo-title" aria-describedby="promo-desc">
-    <span id="promo-close-btn" aria-label="Close popup">&times;</span>
-    <img src="assets/images/ResizedImage_2025-07-19_06-10-47_1594.jpg" alt="High Stoner Tough iPhone Case" />
-    <h2 id="promo-title">New Release!</h2>
-    <p id="promo-desc">Get your <strong>"High Stoner"</strong> Tough iPhone Case<br><span class="discount">25% OFF for a limited time!</span></p>
-    <a href="https://www.redbubble.com/i/iphone-case/COMING-SOON-FALL-25-by-GCodeMerch/172285674.18NOY" target="_blank" rel="noopener">Shop Now</a>
-  </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Auction countdown logic
-      window.startAuction = function () {
-        const end = new Date().getTime() + 48 * 60 * 60 * 1000;
-        const countdown = document.getElementById("countdown");
-        const interval = setInterval(() => {
-          const now = new Date().getTime();
-          const distance = end - now;
-          if (distance < 0) {
-            clearInterval(interval);
-            countdown.innerHTML = "Auction ended!";
-          } else {
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            countdown.innerHTML = `Time left: ${hours}h ${minutes}m ${seconds}s`;
-          }
-        }, 1000);
-      };
-
-      window.mintNft = function () {
-        alert("Mint function will connect to your wallet and mint NFT (Web3 integration required).");
-      };
-
-      window.placeBid = function () {
-        alert("Place Bid function triggered. Web3 auction logic will handle transaction.");
-      };
-
-      setTimeout(function () {
-        document.getElementById('promo-overlay').style.display = 'block';
-        document.getElementById('promo-popup').classList.add('show');
-      }, 2000);
-
-      document.getElementById('promo-close-btn').onclick = closePopup;
-      document.getElementById('promo-overlay').onclick = closePopup;
-
-      function closePopup() {
-        document.getElementById('promo-popup').classList.remove('show');
-        document.getElementById('promo-overlay').style.display = 'none';
-      }
-    });
-  </script>
 
 </body>
 </html>
