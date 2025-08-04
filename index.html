@@ -135,6 +135,21 @@
       <img src="https://www.redbubble.com/shop/ap/172231642?asc=u" alt="Fan Merch Ad">
     </a>
   </div>
+  <script>
+  function closePopup() {
+    const ad = document.getElementById("popupAd");
+    ad.style.display = "none";
+    sessionStorage.setItem("popupClosed", "true");
+  }
+
+  window.onload = () => {
+    if (sessionStorage.getItem("popupClosed") !== "true") {
+      document.getElementById("popupAd").style.display = "block";
+    } else {
+      document.getElementById("popupAd").style.display = "none";
+    }
+  };
+  </script>
 
 </body>
 </html>
