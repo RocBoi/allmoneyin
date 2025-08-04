@@ -1,4 +1,40 @@
-/* Reset + Base Styles */
+.popup-ad {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in-out forwards;
+  transition: transform 0.3s ease;
+}
+.popup-ad:hover {
+  transform: scale(1.03);
+}
+.popup-ad img {
+  width: 100%;
+  display: block;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 * {
   margin: 0;
   padding: 0;
